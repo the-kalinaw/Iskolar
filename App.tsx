@@ -28,6 +28,7 @@ import HomePage from './HomePage';
 import UniversitiesPage from './UniversitiesPage';
 import ScholarshipsPage from './ScholarshipsPage';
 import ReviewersPage from './ReviewersPage';
+import AboutPage from './AboutPage';
 
 // Iskolar Logo
 const IskolarLogo = ({ size = 32, className = "" }: { size?: number, className?: string }) => (
@@ -92,6 +93,7 @@ const App: React.FC = () => {
                 { id: 'scholarships', label: 'SCHOLARSHIPS' },
                 { id: 'process', label: 'PROSESO' },
                 { id: 'reviewers', label: 'REVIEWERS' },
+                { id: 'about', label: 'ABOUT' },
               ].map((item) => (
                 <button
                   key={item.id}
@@ -131,7 +133,7 @@ const App: React.FC = () => {
             className="md:hidden bg-white border-b-2 border-zinc-900 overflow-hidden shadow-2xl z-40 fixed w-full top-20 left-0"
           >
             <div className="p-4 space-y-2 bg-zinc-50">
-              {['home', 'universities', 'scholarships', 'process', 'reviewers'].map((item) => (
+              {['home', 'universities', 'scholarships', 'process', 'reviewers', 'about'].map((item) => (
                 <button
                   key={item}
                   onClick={() => { setView(item as ViewState); setIsMobileMenuOpen(false); }}
@@ -163,6 +165,7 @@ const App: React.FC = () => {
                  {view === 'scholarships' && 'SCHOLARSHIPS'}
                  {view === 'process' && 'PROSESO'}
                  {view === 'reviewers' && 'REVIEWERS'}
+                 {view === 'about' && 'ABOUT US'}
                </span>
              </h2>
              <p className="text-lg text-zinc-500 font-medium mt-4 font-mono">
@@ -171,6 +174,7 @@ const App: React.FC = () => {
                {view === 'scholarships' && '// Financial Aid Opportunities'}
                {view === 'process' && '// General Guide & Requirements'}
                {view === 'reviewers' && '// Exam Review Materials'}
+               {view === 'about' && '// The Team Behind Iskolar'}
              </p>
           </div>
 
@@ -517,6 +521,7 @@ const App: React.FC = () => {
           {view === 'scholarships' && <ScholarshipsPage setDetailItem={setDetailItem} />}
           {view === 'process' && <Process />}
           {view === 'reviewers' && <ReviewersPage />}
+          {view === 'about' && <AboutPage />}
         </motion.div>
       </AnimatePresence>
       <DetailModal item={detailItem as any} />

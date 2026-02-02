@@ -1,5 +1,5 @@
 
-export type ViewState = 'onboarding' | 'home' | 'universities' | 'scholarships' | 'process' | 'reviewers';
+export type ViewState = 'onboarding' | 'home' | 'universities' | 'scholarships' | 'process' | 'reviewers' | 'about';
 
 export type CourseCategory = 
   | 'General' 
@@ -38,6 +38,7 @@ export interface ScholarshipEntry {
   level: 'SHS/JHS' | 'College' | 'Both';
   tags: string[];
   link?: string;
+  requirements?: string[];
 }
 
 export interface ReviewerLink {
