@@ -432,7 +432,8 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     provider: "Government", 
     level: "SHS/JHS", 
     tags: ["Voucher", "Public/Private Grade 10"], 
-    link: "https://ovap.peac.org.ph/" 
+    link: "https://ovap.peac.org.ph/" ,
+    requirements: ["complete VAF-1 form", "PSA Certified Birth Certificate (Original)", "Photocopy of Grade 10 Card"]
   },
   { 
     title: "CHED Scholarship Program", 
