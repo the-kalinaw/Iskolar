@@ -342,7 +342,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["General"], 
     type: "State", 
     link: "https://plm.edu.ph/admissions", 
-    requirements: ["PSA Birth Certificate", "Grade 11 Report Card", "Certification of GWA - Grade 11"] 
+    requirements: ["PSA Birth Certificate", "Grade 11 Report Card", "Certification of GWA - Grade 11", "ALS completers and Accreditation & Equivalency - Certificate of Completion"] 
   },
   { 
     name: "Batangas State University", 
@@ -367,7 +367,7 @@ export const UNIVERSITIES: University[] = [
     type: "State", 
     link: "https://www.pnu.edu.ph/admissions/", 
     requirements: ["Signed PWEBSS Form", "High School Scholastic Record", "Certificate of Enrollment or Registration", "Declaration as a New Student", "Recommendation Form", "Personal Statement",
-                  "Research Interest (For gap year students only/for BS-MA applicants only)"] 
+                  "Research Interest (For gap year students only / for BS-MA applicants only)"] 
   },
   { 
     name: "Laguna University", 
@@ -375,7 +375,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["IT", "General"], 
     type: "State", 
     link: "https://lu.edu.ph/", 
-    requirements: ["Scanned Grade 12 Report Card", "Form 137-A/SF10", "Certificate of Good Moral", "Birth Certificate"] 
+    requirements: ["Scanned Grade 12 Report Card", "Form 137-A / SF10", "Certificate of Good Moral", "Birth Certificate"] 
   },
   { 
     name: "City College of Calamba", 
@@ -416,9 +416,10 @@ export const UNIVERSITIES: University[] = [
   { 
     name: "Philippine Merchant Marine Academy", 
     categories: ["Cadet"], 
-    type: "Government", 
+    type: "Government", "Private"
     link: "https://admissions.pmma.edu.ph/", 
-    requirements: ["Principal's Certification of current enrollment", "2x2 ID Picture"] 
+    requirements: ["Principal's Certification of current enrollment", "2x2 ID Picture"],
+    applicationFee: "₱500"
   },
   { 
     name: "Polytechnic University of the Philippines - Manila", 
@@ -436,6 +437,8 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "SHS/JHS", 
     tags: ["Voucher", "Public/Private Grade 10"], 
     link: "https://ovap.peac.org.ph/" ,
+    eligibility: ["Grade 10 completers from public schools", "Grade 10 completers from State Universities and Colleges (SUCs) and Local Universities and Colleges (LUCs)", "Grade 10 completers from private schools who are current Education Service Contracting (ESC) grantees",
+                 "Passers of the ALS Accreditation and Equivalency (A&E) Test", "Passers of the Philippine Education Placement Test (PEPT)", "Filipino Citizen"],
     requirements: ["complete VAF-1 form", "PSA Certified Birth Certificate (Original)", "Photocopy of Grade 10 Card", "Certificate of Employment or Latest Income Tax Return (ITR)", "Certificate of Tax Exemption or Municipal Certification of Unemployment", 
                    "2 copies of 2x2 ID photo", "Signed Parent/Guardian Consent Form", "(For ESC Grantees) Certification Letter from JHS Principal"]
   },
@@ -445,6 +448,7 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "College", 
     tags: ["Merit", "GWA 93%", "Income < 500k"], 
     link: "https://ched.gov.ph/",
+    eligibility: ["Filipino Citizen", "SHS graduate"],
     requirements: ["Complete Online Application Form", "Copy of Birth certificate by NSO or PSA", "Certified true copy of Form 138, duly signed by the registrar or an authorized representative of the SHS attended",
                    "Latest ITR of parents or guardian/Certificate of Tax Exemption/Non-Filer issued by the BIR/Certified true copy of latest contract or proof of income/Socisial Case Study Report issued by the City/Municipal Social Welfare and Development Office (CSWD/MSWD)",]
   },
@@ -464,7 +468,19 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     provider: "Government", 
     level: "College", 
     tags: ["OFW Dependent", "GWA 80%"], 
-    link: "https://scholarship.owwa.gov.ph/" 
+    link: "https://scholarship.owwa.gov.ph/",
+    eligibility: ["children or siblings of active OWWA members", "single", "Age < 21 yrs old", "Grade 12 graduating student", "GWA at least 80%", "Willing to enroll in any four or five-year bachelor's course in any Philippine-based college"],
+    requirements: ["valid passport (OFW)", "valid school ID", "birth certificate", "baptismal certificate", "latest report card or GWA", "grades from current year or last school year", "2x2 ID picture with name tag and signature"]
+  },
+  { 
+    title: "OWWA (CMWSP)", 
+    provider: "Government", 
+    level: "College", 
+    tags: ["OFW Dependent", "GWA 80%"], 
+    link: "https://scholarship.owwa.gov.ph/",
+    eligibility: ["OFW", "child of sibling of a single or married but childless OFW who is an active OWWA member", "Age < 21 yrs old", "Income < USD 2,400.00", "GWA 80%",
+                 "must be willing to enroll in courses under Science and Technology in any Philippine-based college"],
+    requirement: ["valid passport (OFW)", "valid school ID", "birth certificate", "baptismal certificate", "report card or latest GWA", "2x2 ID picture with name tag and signature"]
   },
   { 
     title: "Iskolar ni Gob (Laguna)", 
@@ -472,6 +488,15 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "College", 
     tags: ["Provincial", "Financial Aid"], 
     link: "https://www.facebook.com/LagunaProvincialCapitol" 
+  },
+  { 
+    title: "GSIS STEM Scholarship Program", 
+    provider: "Government", 
+    level: "College", 
+    tags: ["Financial Aid", "GWA 90%", "STEM"], 
+    link: "https://www.gsis.gov.ph",
+    eligibility: ["must be active GSIS member with 3+ years of servers or permanent total disability (PTD) below 60 yrs old", "must have SHS GWA 90%", "must be incoming 1st-year college student under a STEM course", "chosen collegemust be CHED recognized"],
+    requirement: ["SHS final report card", "service record", "latest payslip (verified SG 15 status","GSIS touch account", "updated IDs and certifications (if Solo Parent / IP / PWD"]
   },
   { 
     title: "SM Scholarship Program", 
