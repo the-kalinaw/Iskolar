@@ -433,21 +433,28 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "SHS/JHS", 
     tags: ["Voucher", "Public/Private Grade 10"], 
     link: "https://ovap.peac.org.ph/" ,
-    requirements: ["complete VAF-1 form", "PSA Certified Birth Certificate (Original)", "Photocopy of Grade 10 Card"]
+    requirements: ["complete VAF-1 form", "PSA Certified Birth Certificate (Original)", "Photocopy of Grade 10 Card", "Certificate of Employment or Latest Income Tax Return (ITR)", "Certificate of Tax Exemption or Municipal Certification of Unemployment", 
+                   "2 copies of 2x2 ID photo", "Signed Parent/Guardian Consent Form", "(For ESC Grantees) Certification Letter from JHS Principal"]
   },
   { 
     title: "CHED Scholarship Program", 
     provider: "Government", 
     level: "College", 
     tags: ["Merit", "GWA 93%", "Income < 500k"], 
-    link: "https://ched.gov.ph/" 
+    link: "https://ched.gov.ph/",
+    requirements: ["Complete Online Application Form", "Copy of Birth certificate by NSO or PSA", "Certified true copy of Form 138, duly signed by the registrar or an authorized representative of the SHS attended",
+                   "Latest ITR of parents or guardian/Certificate of Tax Exemption/Non-Filer issued by the BIR/Certified true copy of latest contract or proof of income/Socisial Case Study Report issued by the City/Municipal Social Welfare and Development Office (CSWD/MSWD)",]
   },
   { 
     title: "DOST-SEI Undergraduate Scholarship", 
     provider: "Government", 
     level: "College", 
     tags: ["STEM", "Merit", "Top 5% Non-STEM"], 
-    link: "https://science-scholarships.ph/" 
+    link: "https://science-scholarships.ph/",
+    requirements: ["Form C (Certificate of Good Moral Character)", "Form D (Certificate of Good Health)", "Form E2 (Applicant who is in the STEM strand)", "Form E2 (Applicant who is in the NON-STEM strand that belongs to the upper 5% of the NON-STEM class)",
+                   "Form F (Certificate of Residency)", "Form G (Parent’s Certification)", "Form H (DOST-SEI scholarship examination/award)", "Form I (Applicant’s Certification of No-Post Secondary Units)",
+                   "Form J (Signed Declaration of Applicant and the Parent/Legal Guardian)", "Recent passport size (4.5 cm x 3.5 cm) picture", "birth certificate", "(Proof of income of Parent/Legal Guardian) Income Tax Return/BIR From 1701/Employment Contract for OFW/BIR Certificate of Exemption from Filing of ITR/Certificate of Indigency/If pensioner, proof of Pension", 
+                   "Notarized Affidavit of Guardianship"]
   },
   { 
     title: "OWWA (EDSP)", 
