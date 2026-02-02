@@ -305,14 +305,15 @@ export const UNIVERSITIES: University[] = [
     categories: ["General"], 
     type: "State", 
     link: "https://iadmit.pnc.edu.ph/", 
-    requirements: ["Affidavit of Undertaking (Notarized)", "Certificate of Enrollment", "PSA Birth Certificate", "Good Moral", "Voter's Certificate"] 
+    requirements: ["Affidavit of Undertaking (Notarized)", "Certificate of Enrollment", "PSA Birth Certificate", "Good Moral", "Voter's Certificate", " Two copies of 2x2 and Four copies of 1x1 colored ID picture with nametag",
+                  "long white folder and long plastic envelope"] 
   },
   { 
     name: "University of the Philippines - Manila", 
     categories: ["Medical", "General"], 
     type: "State", 
     link: "https://upcat.up.edu.ph/", 
-    requirements: ["Certified True Copy of Form 137", "2x2 Picture with signature", "Parent Certification"] 
+    requirements: ["Certified True Copy of Form 137", "2x2 Picture with signature and nametag", "Parent Certification"] 
   },
   { 
     name: "Technological University of the Philippines - Manila", 
@@ -341,7 +342,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["General"], 
     type: "State", 
     link: "https://plm.edu.ph/admissions", 
-    requirements: ["PSA Birth Certificate", "Grade 11 Report Card"] 
+    requirements: ["PSA Birth Certificate", "Grade 11 Report Card", "Certification of GWA - Grade 11"] 
   },
   { 
     name: "Batangas State University", 
@@ -349,7 +350,8 @@ export const UNIVERSITIES: University[] = [
     categories: ["General"], 
     type: "State", 
     link: "https://batstateu.edu.ph/admissions/", 
-    requirements: ["E-copy of Application Form", "Passport size picture", "Certified Grades"] 
+    requirements: ["E-copy of Application Form", "Passport size picture", "Certified Grades", "Grade Form 1 (regular admission", "Grades Form 2 (ALS)", 
+                  "JHS and SHS Form 137", "Certification of Completion of SHS and Strand", "Certification of Enrollment (if not completed)"] 
   },
   { 
     name: "Laguna State Polytechnic University", 
@@ -357,14 +359,15 @@ export const UNIVERSITIES: University[] = [
     categories: ["General", "IT"], 
     type: "State", 
     link: "https://admissions.lspusys.com/", 
-    requirements: ["Scanned Grade 12 Report Card", "Original Form 137", "Good Moral", "Birth Certificate"] 
+    requirements: ["Recent 2x2 ID picture on white background", "Certified True Copy of Grade 11 report card", "Original Form 137", "Certificate of Good Moral", "Birth Certificate"] 
   },
   { 
     name: "Philippine Normal University", 
     categories: ["Education"], 
     type: "State", 
     link: "https://www.pnu.edu.ph/admissions/", 
-    requirements: ["Signed PWEBSS Form", "High School Scholastic Record", "Cert of Enrollment"] 
+    requirements: ["Signed PWEBSS Form", "High School Scholastic Record", "Certificate of Enrollment or Registration", "Declaration as a New Student", "Recommendation Form", "Personal Statement",
+                  "Research Interest (For gap year students only/for BS-MA applicants only)"] 
   },
   { 
     name: "Laguna University", 
@@ -372,7 +375,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["IT", "General"], 
     type: "State", 
     link: "https://lu.edu.ph/", 
-    requirements: ["Scanned Grade 12 Report Card", "Form 137-A", "Good Moral", "Birth Certificate"] 
+    requirements: ["Scanned Grade 12 Report Card", "Form 137-A/SF10", "Certificate of Good Moral", "Birth Certificate"] 
   },
   { 
     name: "City College of Calamba", 
@@ -380,7 +383,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["General", "Education"], 
     type: "State", 
     link: "https://ccc.edu.ph/admissions", 
-    requirements: ["Online Admission Form", "Grade 11 & 12 Cards", "PSA Birth Certificate", "Good Moral", "Barangay Cert of Residency", "Voter's ID"] 
+    requirements: ["Online Admission Form", "Photocopy of Grade 11 & 12 Cards", "Photocopy of PSA/NSO Birth Certificate", "Photocopy of Certificate of Good Moral", "Barangay Certificate of Residency", "Voter's ID", "Three copies of 2x2 ID picture on white background"] 
   },
   { 
     name: "University of the Philippines - Los Baños", 
@@ -394,7 +397,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["General", "IT", "Engineering"], 
     type: "State", 
     link: "https://www.rtu.edu.ph/", 
-    requirements: ["2x2 ID Picture", "Report Cards", "Certificate of Good Moral"] 
+    requirements: ["2x2 ID Picture on blue background", "Report Cards", "Certificate of Good Moral", "Valid ID", "Complete Online Application"] 
   },
   { 
     name: "Philippine Military Academy", 
