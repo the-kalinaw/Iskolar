@@ -214,6 +214,7 @@ const App: React.FC = () => {
     const benefits = data.benefits || [];
     const steps = data.steps || APPLICATION_STEPS.slice(0, 5); // Default to generic for unis if no specific steps
     const tags = data.tags || [];
+    const eligibility = data.eligibility || [];
 
     return (
       <AnimatePresence>
@@ -273,18 +274,29 @@ const App: React.FC = () => {
               {/* Dynamic Content based on Kind */}
               {kind === 'scholarship' ? (
                 <div className="space-y-8">
-                  {/* 1. Eligibility (Tags) */}
+                  {/* 1. Eligibility (Tags or Detailed List) */}
                   <div className="brutal-card p-6 bg-zinc-50">
                     <h4 className="font-black text-zinc-900 uppercase mb-4 flex items-center gap-2">
                        <Target size={20} className="text-teal-600" /> Eligibility Criteria
                     </h4>
-                    <div className="flex flex-wrap gap-2">
-                       {tags.map((t: string) => (
-                         <span key={t} className="text-xs font-bold px-3 py-2 bg-white border-2 border-zinc-900 uppercase tracking-wide">
-                            {t}
-                         </span>
-                       ))}
-                    </div>
+                    {eligibility.length > 0 ? (
+                      <ul className="space-y-2">
+                         {eligibility.map((e: string, i: number) => (
+                           <li key={i} className="flex gap-3 text-sm font-medium text-zinc-700 items-start">
+                              <div className="w-1.5 h-1.5 bg-zinc-900 mt-1.5 flex-shrink-0 rounded-full"></div>
+                              {e}
+                           </li>
+                         ))}
+                      </ul>
+                    ) : (
+                      <div className="flex flex-wrap gap-2">
+                         {tags.map((t: string) => (
+                           <span key={t} className="text-xs font-bold px-3 py-2 bg-white border-2 border-zinc-900 uppercase tracking-wide">
+                              {t}
+                           </span>
+                         ))}
+                      </div>
+                    )}
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-8">

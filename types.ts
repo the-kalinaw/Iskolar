@@ -36,7 +36,8 @@ export interface ScholarshipEntry {
   title: string;
   provider: 'Government' | 'Private';
   level: 'SHS/JHS' | 'College' | 'Both';
-  tags: string[]; // Eligibility
+  tags: string[]; // Short tags for cards
+  eligibility?: string[]; // Detailed eligibility criteria
   link?: string;
   requirements?: string[];
   benefits?: string[];

@@ -416,7 +416,7 @@ export const UNIVERSITIES: University[] = [
   { 
     name: "Philippine Merchant Marine Academy", 
     categories: ["Cadet"], 
-    type: "Government", "Private"
+    type: "Government", 
     link: "https://admissions.pmma.edu.ph/", 
     requirements: ["Principal's Certification of current enrollment", "2x2 ID Picture"],
     applicationFee: "₱500"
@@ -576,7 +576,7 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     tags: ["Financial Aid", "GWA 90%", "STEM"], 
     link: "https://www.gsis.gov.ph",
     eligibility: ["must be active GSIS member with 3+ years of servers or permanent total disability (PTD) below 60 yrs old", "must have SHS GWA 90%", "must be incoming 1st-year college student under a STEM course", "chosen collegemust be CHED recognized"],
-    requirement: ["SHS final report card", "service record", "latest payslip (verified SG 15 status","GSIS touch account", "updated IDs and certifications (if Solo Parent / IP / PWD"]
+    requirements: ["SHS final report card", "service record", "latest payslip (verified SG 15 status","GSIS touch account", "updated IDs and certifications (if Solo Parent / IP / PWD"]
   },
   { 
     title: "SM Scholarship Program", 
@@ -725,12 +725,12 @@ export const REQUIREMENTS_GUIDE = {
   school: {
     title: "Paaralan (Admin/Principal)",
     steps: [
-      "Pumunta sa Principal's Office o Admin at mag-request ng mga kailangang requirements"
-      "Tanungin ito sa Admin kung magkano ang requirements"
-      "Hintayin ang email o mensahe mula sa kanila kung kailan ito maaaring makuha"
-      [ "Certified True Copy of Grades / Transcript of Records (TOR)",
+      "Pumunta sa Principal's Office o Admin at mag-request ng mga kailangang requirements",
+      "Tanungin ito sa Admin kung magkano ang requirements",
+      "Hintayin ang email o mensahe mula sa kanila kung kailan ito maaaring makuha",
+      "Certified True Copy of Grades / Transcript of Records (TOR)",
       "Certificate of Good Moral Character",
-      "Form 137 / Form 138"]
+      "Form 137 / Form 138"
     ]
   }
 };
