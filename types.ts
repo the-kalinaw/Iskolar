@@ -36,9 +36,11 @@ export interface ScholarshipEntry {
   title: string;
   provider: 'Government' | 'Private';
   level: 'SHS/JHS' | 'College' | 'Both';
-  tags: string[];
+  tags: string[]; // Eligibility
   link?: string;
   requirements?: string[];
+  benefits?: string[];
+  steps?: string[];
 }
 
 export interface ReviewerLink {

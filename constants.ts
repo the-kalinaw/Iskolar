@@ -435,18 +435,53 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     provider: "Government", 
     level: "SHS/JHS", 
     tags: ["Voucher", "Public/Private Grade 10"], 
-    link: "https://ovap.peac.org.ph/" ,
-    requirements: ["complete VAF-1 form", "PSA Certified Birth Certificate (Original)", "Photocopy of Grade 10 Card", "Certificate of Employment or Latest Income Tax Return (ITR)", "Certificate of Tax Exemption or Municipal Certification of Unemployment", 
-                   "2 copies of 2x2 ID photo", "Signed Parent/Guardian Consent Form", "(For ESC Grantees) Certification Letter from JHS Principal"]
+    link: "https://ovap.peac.org.ph/",
+    requirements: [
+      "Voucher Application Form (VAF-1)", 
+      "Original PSA Birth Certificate", 
+      "Photocopy of Grade 10 Report Card", 
+      "Proof of Financial Status (ITR, Cert of Unemployment, or Cert of Indigency)", 
+      "2 copies of 2x2 ID photo", 
+      "Signed Parent/Guardian Consent Form"
+    ],
+    benefits: [
+      "Tuition subsidy ranging from ₱14,000 to ₱22,500 (amount depends on location)",
+      "Valid for use in private SHS or SUCs/LUCs offering SHS"
+    ],
+    steps: [
+      "Check eligibility (Automatic for Public JHS completers; Application needed for Private JHS non-ESC).",
+      "Create an account on the OVAP (Online Voucher Application Portal).",
+      "Fill out the application form and upload required scanned documents.",
+      "Wait for the posting of results on the PEAC website.",
+      "Download and print your QVR (Qualified Voucher Recipient) Certificate.",
+      "Present the QVR to the school upon enrollment."
+    ]
   },
   { 
-    title: "CHED Scholarship Program", 
+    title: "CHED Scholarship Program (CSP)", 
     provider: "Government", 
     level: "College", 
-    tags: ["Merit", "GWA 93%", "Income < 500k"], 
+    tags: ["Merit", "GWA 93%", "Income < 400k"], 
     link: "https://ched.gov.ph/",
-    requirements: ["Complete Online Application Form", "Copy of Birth certificate by NSO or PSA", "Certified true copy of Form 138, duly signed by the registrar or an authorized representative of the SHS attended",
-                   "Latest ITR of parents or guardian/Certificate of Tax Exemption/Non-Filer issued by the BIR/Certified true copy of latest contract or proof of income/Socisial Case Study Report issued by the City/Municipal Social Welfare and Development Office (CSWD/MSWD)",]
+    requirements: [
+      "Complete Online Application Form", 
+      "Certified True Copy of Form 138 (GWA at least 93% for Merit, 96% for Premium)", 
+      "PSA Birth Certificate", 
+      "Parents' ITR / Cert of Indigency / Cert of Tax Exemption",
+      "Certificate of Good Moral Character"
+    ],
+    benefits: [
+      "Full Merit: ₱30,000/sem (Private) or ₱20,000/sem (SUC)",
+      "Half Merit: ₱15,000/sem (Private) or ₱10,000/sem (SUC)",
+      "Book allowance and stipend included in the grant"
+    ],
+    steps: [
+      "Wait for the CHED Regional Office to open the application season (usually March-May).",
+      "Prepare all documentary requirements in digital format (PDF/JPEG).",
+      "Submit application via the CHED Online Portal for your region (e.g., CHEDRO 4A for Laguna).",
+      "Wait for the release of the list of qualifiers.",
+      "If qualified, submit hard copies of documents to the CHED Regional Office."
+    ]
   },
   { 
     title: "DOST-SEI Undergraduate Scholarship", 
@@ -454,52 +489,183 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "College", 
     tags: ["STEM", "Merit", "Top 5% Non-STEM"], 
     link: "https://science-scholarships.ph/",
-    requirements: ["Form C (Certificate of Good Moral Character)", "Form D (Certificate of Good Health)", "Form E2 (Applicant who is in the STEM strand)", "Form E2 (Applicant who is in the NON-STEM strand that belongs to the upper 5% of the NON-STEM class)",
-                   "Form F (Certificate of Residency)", "Form G (Parent’s Certification)", "Form H (DOST-SEI scholarship examination/award)", "Form I (Applicant’s Certification of No-Post Secondary Units)",
-                   "Form J (Signed Declaration of Applicant and the Parent/Legal Guardian)", "Recent passport size (4.5 cm x 3.5 cm) picture", "birth certificate", "(Proof of income of Parent/Legal Guardian) Income Tax Return/BIR From 1701/Employment Contract for OFW/BIR Certificate of Exemption from Filing of ITR/Certificate of Indigency/If pensioner, proof of Pension", 
-                   "Notarized Affidavit of Guardianship"]
+    requirements: [
+      "Form C (Certificate of Good Moral Character)", 
+      "Form D (Certificate of Good Health)", 
+      "Form E1/E2 (Principal's Certification of Grades/Strand)", 
+      "Form F (Certificate of Residency)", 
+      "Form G (Parent’s Certification)",
+      "Recent passport size (4.5 cm x 3.5 cm) picture", 
+      "PSA Birth Certificate", 
+      "Proof of Parent's Income (ITR/Indigency)"
+    ],
+    benefits: [
+      "Tuition and school fees subsidy (₱40,000/year)",
+      "Monthly Living Allowance (₱7,000/month)",
+      "Book Allowance (₱10,000/year)",
+      "Clothing Allowance (₱1,000 first sem)",
+      "Transportation Allowance (for those studying outside home province)"
+    ],
+    steps: [
+      "Register at the E-Scholarship Application System.",
+      "Fill out the form and upload all required documents.",
+      "Select a test center for the qualifying exam.",
+      "Download and print your Test Permit.",
+      "Take the DOST-SEI Scholarship Examination on the scheduled date.",
+      "Wait for the release of passers via national newspapers or the DOST website."
+    ]
   },
   { 
     title: "OWWA (EDSP)", 
     provider: "Government", 
     level: "College", 
     tags: ["OFW Dependent", "GWA 80%"], 
-    link: "https://scholarship.owwa.gov.ph/" 
+    link: "https://scholarship.owwa.gov.ph/",
+    requirements: [
+      "Proof of OWWA Membership (Official Receipt or Cert)",
+      "PSA Birth Certificate of applicant",
+      "Form 137/138 (GWA of at least 80% with no failing grade)",
+      "2x2 ID Pictures",
+      "Certificate of Good Moral Character"
+    ],
+    benefits: [
+      "Financial assistance of ₱60,000.00 per school year",
+      "Covers tuition and other academic fees"
+    ],
+    steps: [
+      "Visit the nearest OWWA Regional Welfare Office.",
+      "Submit the application form and documentary requirements.",
+      "Wait for the schedule of the qualifying examination (DOST exam is usually used as basis).",
+      "Check results online or at the OWWA office.",
+      "Attend the orientation and contract signing if qualified."
+    ]
   },
   { 
     title: "Iskolar ni Gob (Laguna)", 
     provider: "Government", 
     level: "College", 
     tags: ["Provincial", "Financial Aid"], 
-    link: "https://www.facebook.com/LagunaProvincialCapitol" 
+    link: "https://www.facebook.com/LagunaProvincialCapitol",
+    requirements: [
+      "Duly accomplished Application Form",
+      "Certificate of Registration/Enrollment (COR)",
+      "Report Card / Copy of Grades (No failing grade)",
+      "Voter's ID or Certification of Parent/Applicant",
+      "Barangay Indigency",
+      "Community Tax Certificate (Cedula)"
+    ],
+    benefits: [
+      "Cash allowance per semester (amount varies, usually ₱5,000 - ₱10,000)",
+      "Priority in provincial government internships"
+    ],
+    steps: [
+      "Wait for the announcement from the Laguna Provincial Government or Youth Development Affairs Office.",
+      "Submit requirements to your Municipal Coordinator or Provincial Capitol.",
+      "Wait for the validation and screening process.",
+      "Attend the mass payout distribution if approved."
+    ]
   },
   { 
     title: "SM Scholarship Program", 
     provider: "Private", 
     level: "College", 
-    tags: ["Merit", "Income < 250k", "GWA 88%"], 
-    link: "https://www.sm-foundation.org/" 
+    tags: ["Merit", "Income < 150k", "GWA 88%"], 
+    link: "https://www.sm-foundation.org/",
+    requirements: [
+      "Online Application Form",
+      "High School Report Card (GWA 88% or better)",
+      "Parents' ITR or Certificate of Non-Filing of Tax (Income < ₱150,000/year)",
+      "Utility Bills (Electricity/Water) to prove residency",
+      "Sketch of home location"
+    ],
+    benefits: [
+      "Full Tuition and Miscellaneous Fees",
+      "Monthly Allowance",
+      "Part-time job opportunities during break",
+      "Exclusive job offer with SM Group upon graduation"
+    ],
+    steps: [
+      "Apply online via the SM Foundation website (usually open Jan-Mar).",
+      "Take the online qualifying exam.",
+      "Undergo an interview with SM Foundation representatives.",
+      "Wait for the home visit validation.",
+      "Sign the scholarship contract."
+    ]
   },
   { 
     title: "Ayala Foundation Scholarship", 
     provider: "Private", 
     level: "College", 
     tags: ["Leadership", "Filipino", "GWA 85%"], 
-    link: "https://ayalafoundation.org/" 
+    link: "https://ayalafoundation.org/",
+    requirements: [
+      "Accomplished Application Form",
+      "Certified True Copy of Grades (GWA 85% or higher)",
+      "Proof of Family Income (ITR or Indigency)",
+      "Recommendation Letter from Principal/Guidance Counselor",
+      "Essay on leadership and community service"
+    ],
+    benefits: [
+      "Financial assistance for tuition and books",
+      "Leadership development training (Ayala Young Leaders Congress)",
+      "Mentorship from Ayala executives"
+    ],
+    steps: [
+      "Fill out the online application form.",
+      "Upload scanned copies of requirements.",
+      "Wait for shortlist notification.",
+      "Attend the panel interview.",
+      "Participate in the leadership camp (if part of the program)."
+    ]
   },
   { 
     title: "Gokongwei Brothers Foundation", 
     provider: "Private", 
     level: "College", 
-    tags: ["STEM"], 
-    link: "https://www.gokongweibrothersfoundation.org/programs/for-learners/scholarships" 
+    tags: ["STEM", "GWA 85%"], 
+    link: "https://www.gokongweibrothersfoundation.org/programs/for-learners/scholarships",
+    requirements: [
+      "Certified True Copy of Grades (GWA 85%, Math/Science 85%)",
+      "Proof of Enrollment in a STEM course",
+      "PSA Birth Certificate",
+      "Certificate of Good Moral Character",
+      "Proof of Household Income (max ₱200k/year)"
+    ],
+    benefits: [
+      "Fixed annual financial grant (₱60,000 - ₱85,000 depending on course/school)",
+      "Employment opportunities in Gokongwei Group companies",
+      "Scholar development programs"
+    ],
+    steps: [
+      "Submit online application via GBF website.",
+      "Take the qualifying examination.",
+      "Pass the live interview.",
+      "Submit hard copies of requirements upon acceptance."
+    ]
   },
   { 
     title: "BPI Foundation (Pagpupugay)", 
     provider: "Private", 
     level: "College", 
     tags: ["Medical Frontliner Dependent", "GWA 85%"], 
-    link: "https://www.bpifoundation.org/programs/special-projects/pagpupugay-scholarship" 
+    link: "https://www.bpifoundation.org/programs/special-projects/pagpupugay-scholarship",
+    requirements: [
+      "Proof of relationship to a medical frontliner (deceased or active)",
+      "COVID-19 admission/death certificate of parent (if applicable)",
+      "Report Card (GWA 85% or higher)",
+      "Proof of admission to a college/university"
+    ],
+    benefits: [
+      "Full Tuition and Miscellaneous Fees subsidy",
+      "Book and Living Allowance",
+      "Scholarship is valid for the entire duration of the course (must maintain grades)"
+    ],
+    steps: [
+      "Visit the BPI Foundation Pagpupugay website.",
+      "Complete the online application form.",
+      "Submit supporting documents regarding parent's frontliner status.",
+      "Wait for screening and evaluation results."
+    ]
   }
 ];
 

@@ -10,7 +10,9 @@ import {
   Send,
   GraduationCap,
   Sparkles,
-  CreditCard
+  CreditCard,
+  Target,
+  Gift
 } from 'lucide-react';
 import { 
   ViewState, 
@@ -206,7 +208,12 @@ const App: React.FC = () => {
     if (!item) return null as any;
     const close = () => setDetailItem(null);
     const { kind, data } = item;
-    const steps = data.requirements ? data.requirements : [];
+    
+    // Normalize lists based on kind
+    const requirements = data.requirements || [];
+    const benefits = data.benefits || [];
+    const steps = data.steps || APPLICATION_STEPS.slice(0, 5); // Default to generic for unis if no specific steps
+    const tags = data.tags || [];
 
     return (
       <AnimatePresence>
@@ -222,7 +229,7 @@ const App: React.FC = () => {
             initial={{ scale: 0.9, opacity: 0, y: 20 }} 
             animate={{ scale: 1, opacity: 1, y: 0 }} 
             exit={{ scale: 0.95, opacity: 0, y: 20 }} 
-            className="bg-white border-2 border-zinc-900 w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-[16px_16px_0_0_#2dd4bf] relative z-10 flex flex-col"
+            className="bg-white border-2 border-zinc-900 w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-[16px_16px_0_0_#2dd4bf] relative z-10 flex flex-col"
           >
             {/* Modal Header */}
             <div className="bg-zinc-100 border-b-2 border-zinc-900 p-4 flex justify-between items-center sticky top-0 z-20">
@@ -247,9 +254,6 @@ const App: React.FC = () => {
                    {data.categories && data.categories.map((cat:string)=>(
                      <span key={cat} className="text-[10px] font-black px-3 py-1 bg-zinc-900 text-white uppercase tracking-widest">{cat}</span>
                    ))}
-                   {data.tags && data.tags.map((t:string)=>(
-                     <span key={t} className="text-[10px] font-bold px-3 py-1 border-2 border-zinc-900 bg-teal-50 uppercase tracking-widest">#{t}</span>
-                   ))}
                    {data.type && (
                      <span className="text-[10px] font-bold px-3 py-1 border-2 border-zinc-900 bg-yellow-200 uppercase tracking-widest">{data.type}</span>
                    )}
@@ -266,41 +270,116 @@ const App: React.FC = () => {
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8 pt-8 border-t-2 border-zinc-100">
-                <div>
-                  <h4 className="font-black text-zinc-900 uppercase mb-4 flex items-center gap-2">
-                    <span className="bg-zinc-900 text-white w-6 h-6 flex items-center justify-center text-xs">1</span> Requirements
-                  </h4>
-                  {steps.length === 0 ? <p className="text-zinc-500 italic">No specific requirements listed.</p> : (
-                    <ul className="space-y-3">
-                      {steps.map((s:string, i:number)=>(
-                        <li key={i} className="flex gap-3 text-sm font-medium text-zinc-700 items-start">
-                          <div className="w-1.5 h-1.5 bg-teal-500 mt-1.5 flex-shrink-0"></div>
-                          {s}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+              {/* Dynamic Content based on Kind */}
+              {kind === 'scholarship' ? (
+                <div className="space-y-8">
+                  {/* 1. Eligibility (Tags) */}
+                  <div className="brutal-card p-6 bg-zinc-50">
+                    <h4 className="font-black text-zinc-900 uppercase mb-4 flex items-center gap-2">
+                       <Target size={20} className="text-teal-600" /> Eligibility Criteria
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                       {tags.map((t: string) => (
+                         <span key={t} className="text-xs font-bold px-3 py-2 bg-white border-2 border-zinc-900 uppercase tracking-wide">
+                            {t}
+                         </span>
+                       ))}
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-8">
+                    {/* 2. Benefits */}
+                    <div>
+                      <h4 className="font-black text-zinc-900 uppercase mb-4 flex items-center gap-2">
+                        <Gift size={20} className="text-yellow-500" /> Benefits
+                      </h4>
+                      {benefits.length === 0 ? <p className="text-zinc-500 italic text-sm">See official site for details.</p> : (
+                        <ul className="space-y-3">
+                          {benefits.map((s:string, i:number)=>(
+                            <li key={i} className="flex gap-3 text-sm font-medium text-zinc-700 items-start">
+                              <CheckCircle2 size={16} className="text-yellow-500 mt-0.5 flex-shrink-0" />
+                              {s}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+
+                    {/* 3. Requirements */}
+                    <div>
+                      <h4 className="font-black text-zinc-900 uppercase mb-4 flex items-center gap-2">
+                        <span className="bg-zinc-900 text-white w-5 h-5 flex items-center justify-center text-xs">!</span> Requirements
+                      </h4>
+                      {requirements.length === 0 ? <p className="text-zinc-500 italic text-sm">No specific documents listed.</p> : (
+                        <ul className="space-y-3">
+                          {requirements.map((s:string, i:number)=>(
+                            <li key={i} className="flex gap-3 text-sm font-medium text-zinc-700 items-start">
+                              <div className="w-1.5 h-1.5 bg-zinc-900 mt-1.5 flex-shrink-0 rounded-full"></div>
+                              {s}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* 4. Steps */}
+                  <div className="pt-6 border-t-2 border-zinc-100">
+                    <h4 className="font-black text-zinc-900 uppercase mb-4 flex items-center gap-2">
+                      <span className="bg-teal-400 text-zinc-900 border border-zinc-900 w-5 h-5 flex items-center justify-center text-xs shadow-[2px_2px_0_0_#18181b]">→</span> Application Process
+                    </h4>
+                    <ol className="list-decimal list-inside text-sm font-medium text-zinc-600 space-y-2 mb-6">
+                      {steps.map((s: string, i:number)=>(<li key={i} className="pl-1 marker:font-black marker:text-zinc-900">{s}</li>))}
+                    </ol>
+                    {data.link && (
+                      <a 
+                        href={data.link} 
+                        target="_blank" 
+                        className="brutal-btn w-full py-4 text-sm flex items-center gap-2 hover:bg-teal-400"
+                      >
+                        Start Application on Official Website <ArrowRight size={16} />
+                      </a>
+                    )}
+                  </div>
                 </div>
-                
-                <div className="bg-zinc-50 p-6 border-2 border-zinc-200">
-                  <h4 className="font-black text-zinc-900 uppercase mb-4 flex items-center gap-2">
-                    <span className="bg-zinc-900 text-white w-6 h-6 flex items-center justify-center text-xs">2</span> Next Steps
-                  </h4>
-                  <ol className="list-decimal list-inside text-sm font-medium text-zinc-600 space-y-2 mb-6">
-                    {APPLICATION_STEPS.slice(0,5).map((s, i)=>(<li key={i}>{s}</li>))}
-                  </ol>
-                  {data.link && (
-                    <a 
-                      href={data.link} 
-                      target="_blank" 
-                      className="brutal-btn w-full py-3 text-sm flex items-center gap-2 hover:bg-teal-400"
-                    >
-                      Visit Official Website <ArrowRight size={16} />
-                    </a>
-                  )}
+              ) : (
+                /* University Layout */
+                <div className="grid md:grid-cols-2 gap-8 pt-8 border-t-2 border-zinc-100">
+                  <div>
+                    <h4 className="font-black text-zinc-900 uppercase mb-4 flex items-center gap-2">
+                      <span className="bg-zinc-900 text-white w-6 h-6 flex items-center justify-center text-xs">1</span> Requirements
+                    </h4>
+                    {requirements.length === 0 ? <p className="text-zinc-500 italic">No specific requirements listed.</p> : (
+                      <ul className="space-y-3">
+                        {requirements.map((s:string, i:number)=>(
+                          <li key={i} className="flex gap-3 text-sm font-medium text-zinc-700 items-start">
+                            <div className="w-1.5 h-1.5 bg-teal-500 mt-1.5 flex-shrink-0"></div>
+                            {s}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                  
+                  <div className="bg-zinc-50 p-6 border-2 border-zinc-200">
+                    <h4 className="font-black text-zinc-900 uppercase mb-4 flex items-center gap-2">
+                      <span className="bg-zinc-900 text-white w-6 h-6 flex items-center justify-center text-xs">2</span> Next Steps
+                    </h4>
+                    <ol className="list-decimal list-inside text-sm font-medium text-zinc-600 space-y-2 mb-6">
+                      {steps.map((s: string, i:number)=>(<li key={i}>{s}</li>))}
+                    </ol>
+                    {data.link && (
+                      <a 
+                        href={data.link} 
+                        target="_blank" 
+                        className="brutal-btn w-full py-3 text-sm flex items-center gap-2 hover:bg-teal-400"
+                      >
+                        Visit Official Website <ArrowRight size={16} />
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </motion.div>
         </div>
