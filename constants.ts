@@ -546,9 +546,12 @@ export const REQUIREMENTS_GUIDE = {
   school: {
     title: "Paaralan (Admin/Principal)",
     steps: [
-      "Certified True Copy of Grades / Transcript of Records (TOR)",
+      "Pumunta sa Principal's Office o Admin at mag-request ng mga kailangang requirements"
+      "Tanungin ito sa Admin kung magkano ang requirements"
+      "Hintayin ang email o mensahe mula sa kanila kung kailan ito maaaring makuha"
+      [ "Certified True Copy of Grades / Transcript of Records (TOR)",
       "Certificate of Good Moral Character",
-      "Form 137 / Form 138"
+      "Form 137 / Form 138"]
     ]
   }
 };
