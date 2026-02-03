@@ -342,7 +342,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["General"], 
     type: "State", 
     link: "https://plm.edu.ph/admissions", 
-    requirements: ["PSA Birth Certificate", "Grade 11 Report Card", "Certification of GWA - Grade 11"] 
+    requirements: ["PSA Birth Certificate", "Grade 11 Report Card", "Certification of GWA - Grade 11", "ALS completers and Accreditation & Equivalency - Certificate of Completion"] 
   },
   { 
     name: "Batangas State University", 
@@ -367,7 +367,7 @@ export const UNIVERSITIES: University[] = [
     type: "State", 
     link: "https://www.pnu.edu.ph/admissions/", 
     requirements: ["Signed PWEBSS Form", "High School Scholastic Record", "Certificate of Enrollment or Registration", "Declaration as a New Student", "Recommendation Form", "Personal Statement",
-                  "Research Interest (For gap year students only/for BS-MA applicants only)"] 
+                  "Research Interest (For gap year students only / for BS-MA applicants only)"] 
   },
   { 
     name: "Laguna University", 
@@ -375,7 +375,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["IT", "General"], 
     type: "State", 
     link: "https://lu.edu.ph/", 
-    requirements: ["Scanned Grade 12 Report Card", "Form 137-A/SF10", "Certificate of Good Moral", "Birth Certificate"] 
+    requirements: ["Scanned Grade 12 Report Card", "Form 137-A / SF10", "Certificate of Good Moral", "Birth Certificate"] 
   },
   { 
     name: "City College of Calamba", 
@@ -416,9 +416,10 @@ export const UNIVERSITIES: University[] = [
   { 
     name: "Philippine Merchant Marine Academy", 
     categories: ["Cadet"], 
-    type: "Government", 
+    type: "Government", "Private"
     link: "https://admissions.pmma.edu.ph/", 
-    requirements: ["Principal's Certification of current enrollment", "2x2 ID Picture"] 
+    requirements: ["Principal's Certification of current enrollment", "2x2 ID Picture"],
+    applicationFee: "₱500"
   },
   { 
     name: "Polytechnic University of the Philippines - Manila", 
@@ -436,6 +437,8 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "SHS/JHS", 
     tags: ["Voucher", "Public/Private Grade 10"], 
     link: "https://ovap.peac.org.ph/",
+    eligibility: ["Grade 10 completers from public schools", "Grade 10 completers from State Universities and Colleges (SUCs) and Local Universities and Colleges (LUCs)", "Grade 10 completers from private schools who are current Education Service Contracting (ESC) grantees",
+                 "Passers of the ALS Accreditation and Equivalency (A&E) Test", "Passers of the Philippine Education Placement Test (PEPT)", "Filipino Citizen"],
     requirements: [
       "Voucher Application Form (VAF-1)", 
       "Original PSA Birth Certificate", 
@@ -463,6 +466,7 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "College", 
     tags: ["Merit", "GWA 93%", "Income < 400k"], 
     link: "https://ched.gov.ph/",
+    eligibility: ["Filipino Citizen", "SHS graduate"],
     requirements: [
       "Complete Online Application Form", 
       "Certified True Copy of Form 138 (GWA at least 93% for Merit, 96% for Premium)", 
@@ -564,6 +568,15 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
       "Wait for the validation and screening process.",
       "Attend the mass payout distribution if approved."
     ]
+  },
+  { 
+    title: "GSIS STEM Scholarship Program", 
+    provider: "Government", 
+    level: "College", 
+    tags: ["Financial Aid", "GWA 90%", "STEM"], 
+    link: "https://www.gsis.gov.ph",
+    eligibility: ["must be active GSIS member with 3+ years of servers or permanent total disability (PTD) below 60 yrs old", "must have SHS GWA 90%", "must be incoming 1st-year college student under a STEM course", "chosen collegemust be CHED recognized"],
+    requirement: ["SHS final report card", "service record", "latest payslip (verified SG 15 status","GSIS touch account", "updated IDs and certifications (if Solo Parent / IP / PWD"]
   },
   { 
     title: "SM Scholarship Program", 
@@ -712,9 +725,12 @@ export const REQUIREMENTS_GUIDE = {
   school: {
     title: "Paaralan (Admin/Principal)",
     steps: [
-      "Certified True Copy of Grades / Transcript of Records (TOR)",
+      "Pumunta sa Principal's Office o Admin at mag-request ng mga kailangang requirements"
+      "Tanungin ito sa Admin kung magkano ang requirements"
+      "Hintayin ang email o mensahe mula sa kanila kung kailan ito maaaring makuha"
+      [ "Certified True Copy of Grades / Transcript of Records (TOR)",
       "Certificate of Good Moral Character",
-      "Form 137 / Form 138"
+      "Form 137 / Form 138"]
     ]
   }
 };
