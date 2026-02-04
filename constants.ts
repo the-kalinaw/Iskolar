@@ -435,13 +435,18 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "SHS/JHS", 
     tags: ["Voucher", "Public/Private Grade 10"], 
     link: "https://ovap.peac.org.ph/",
-    eligibility: ["Grade 10 completers from public schools", "Grade 10 completers from State Universities and Colleges (SUCs) and Local Universities and Colleges (LUCs)", "Grade 10 completers from private schools who are current Education Service Contracting (ESC) grantees",
-                 "Passers of the ALS Accreditation and Equivalency (A&E) Test", "Passers of the Philippine Education Placement Test (PEPT)", "Filipino Citizen"],
+    eligibility: ["Grade 10 completers from public schools", 
+      "Grade 10 completers from State Universities and Colleges (SUCs) and Local Universities and Colleges (LUCs)", 
+      "Grade 10 completers from private schools who are current Education Service Contracting (ESC) grantees",
+      "Passers of the ALS Accreditation and Equivalency (A&E) Test", 
+      "Passers of the Philippine Education Placement Test (PEPT)", 
+      "Filipino Citizen"
+    ],
     requirements: [
       "Voucher Application Form (VAF-1)", 
       "Original PSA Birth Certificate", 
       "Photocopy of Grade 10 Report Card", 
-      "Proof of Financial Status (ITR, Cert of Unemployment, or Cert of Indigency)", 
+      "Proof of Financial Status (ITR, Certificate of Unemployment, or Certificate of Indigency)", 
       "2 copies of 2x2 ID photo", 
       "Signed Parent/Guardian Consent Form"
     ],
@@ -463,13 +468,14 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     provider: "Government", 
     level: "College", 
     tags: ["Merit", "GWA 93%", "Income < 400k"], 
+    eligibility: ["Filipino Citizen", "SHS graduate", "annual gross income should not exceed ₱500,000"],
     link: "https://ched.gov.ph/",
-    eligibility: ["Filipino Citizen", "SHS graduate"],
     requirements: [
       "Complete Online Application Form", 
       "Certified True Copy of Form 138 (GWA at least 93% for Merit, 96% for Premium)", 
-      "PSA Birth Certificate", 
-      "Parents' ITR / Cert of Indigency / Cert of Tax Exemption",
+      "PSA/NSO Birth Certificate", 
+      "Parents' ITR / Certificate of Indigency / Certificate of Tax Exemption",
+      "Certified true copy of latest contract or proof of income",
       "Certificate of Good Moral Character"
     ],
     benefits: [
@@ -497,9 +503,13 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
       "Form E1/E2 (Principal's Certification of Grades/Strand)", 
       "Form F (Certificate of Residency)", 
       "Form G (Parent’s Certification)",
+      "Form H (DOST-SEI scholarship examination/award)",
+      "Form I (Applicant’s Certification of No-Post Secondary Units)",
+      "Form J (Signed Declaration of Applicant and the Parent/Legal Guardian)",
       "Recent passport size (4.5 cm x 3.5 cm) picture", 
       "PSA Birth Certificate", 
-      "Proof of Parent's Income (ITR/Indigency)"
+      "Proof of Parent's Income (ITR/Indigency/Pension)",
+      "Notarized Affidavit of Guardianship"
     ],
     benefits: [
       "Tuition and school fees subsidy (₱40,000/year)",
@@ -523,12 +533,54 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "College", 
     tags: ["OFW Dependent", "GWA 80%"], 
     link: "https://scholarship.owwa.gov.ph/",
+    eligibility: [
+      "children or siblings of active OWWA member",
+      "must be single",
+      "not older thatn 21 years old",
+      "must be a graduating Grade 12 student",
+      "GWA of at least 80%, with no failing grade",
+      "must be willing to enroll in any four or five-year baccalaureate course in a Philippine-based college"
+    ],
     requirements: [
+      "Valid passport (OFW)",
+      "Valid school ID or any Valid ID of applicant",
       "Proof of OWWA Membership (Official Receipt or Cert)",
       "PSA Birth Certificate of applicant",
       "Form 137/138 (GWA of at least 80% with no failing grade)",
-      "2x2 ID Pictures",
       "Certificate of Good Moral Character"
+      "2x2 ID pictures with white background and signature",
+    ],
+    benefits: [
+      "Financial assistance of ₱60,000.00 per school year",
+      "Covers tuition and other academic fees"
+    ],
+    steps: [
+      "Visit the nearest OWWA Regional Welfare Office.",
+      "Submit the application form and documentary requirements.",
+      "Wait for the schedule of the qualifying examination (DOST exam is usually used as basis).",
+      "Check results online or at the OWWA office.",
+      "Attend the orientation and contract signing if qualified."
+    ]
+  },
+    { 
+    title: "OWWA (CMWSP)", 
+    provider: "Government", 
+    level: "College", 
+    tags: ["OFW Dependent", "GWA 80%"], 
+    link: "https://scholarship.owwa.gov.ph/",
+    eligibility: ["OFW","child of sibling of a single or married but childless OFW who is an active OWWA member", 
+      "not older ther 21 years old", "annual income of less than $2,400", 
+      "GWA of at least 80%, with no failing grade", 
+      "must be willing in courses under Science and Technology in any Philippine-based college"],
+    requirements: [
+      "Valid passport (OFW)",
+      "Valid school ID or any Valid ID of applicant",
+      "Proof of OWWA Membership (Official Receipt or Certificate)",
+      "PSA Birth Certificate of applicant",
+      "Form 137/138 (GWA of at least 80% with no failing grade)",
+      "2x2 ID pictures with white background and signature",
+      "Certificate of Good Moral Character"
+
     ],
     benefits: [
       "Financial assistance of ₱60,000.00 per school year",
@@ -573,8 +625,10 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "College", 
     tags: ["Financial Aid", "GWA 90%", "STEM"], 
     link: "https://www.gsis.gov.ph",
-    eligibility: ["must be active GSIS member with 3+ years of servers or permanent total disability (PTD) below 60 yrs old", "must have SHS GWA 90%", "must be incoming 1st-year college student under a STEM course", "chosen collegemust be CHED recognized"],
-    requirements: ["SHS final report card", "service record", "latest payslip (verified SG 15 status","GSIS touch account", "updated IDs and certifications (if Solo Parent / IP / PWD"]
+    eligibility: ["must be active GSIS member with 3+ years of servers or permanent total disability (PTD) below 60 yrs old", 
+      "must have SHS GWA 90%", "must be incoming 1st-year college student under a STEM course", 
+      "chosen college must be CHED recognized"],
+    requirements: ["SHS final report card", "service record", "latest payslip (verified SG 15 status","GSIS touch account", "updated IDs and certifications (if Solo Parent / IP / PWD)"]
   },
   { 
     title: "SM Scholarship Program", 
