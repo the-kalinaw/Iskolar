@@ -139,7 +139,7 @@ export const UNIVERSITIES: University[] = [
   },
   { 
     name: "Far Eastern University - NRMF",
-    address: "Quezon City" 
+    address: "Quezon City", 
     categories: ["Medical"], 
     type: "Private", 
     link: "https://www.feu-nrmf.edu.ph/admission-procedure", 
@@ -159,7 +159,7 @@ export const UNIVERSITIES: University[] = [
   },
   { 
     name: "Our Lady of Fatima University", 
-    address: "Sta. Rosa, Laguna & Valenzuela City"
+    address: "Sta. Rosa, Laguna & Valenzuela City",
     categories: ["General", "Medical"], 
     type: "Private", 
     link: "https://fatima.edu.ph/all-about-enrollment/", 
