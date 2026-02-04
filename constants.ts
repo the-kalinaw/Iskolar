@@ -746,6 +746,23 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     ]
   },
   { 
+    title: "Ateneo de Manila University SHS Financial Aid", 
+    provider: "Private", 
+    level: "SHS/JHS", 
+    tags: ["Financial Aid"], 
+    link: "https://www.ateneo.edu/ajhs/admissions/scholarships",
+    eligibility: ["Incoming grade 7 students are offered to applicants from public elementary schools, top students are invited to apply through the help of our Tulong-Dunong program."],
+    requirements: ["PSA/NSO Birth Certificate (include page 2)", "Recent ID picture", "Completed report card (Grade 5/6/7/8, whichever would apply)", "Most recent official copy of current grade level card (Grade 6/7/8/9, whichever applies)",
+      "Signed Letter of Recommendation from the Homeroom Teacher of the current year (The teacher should send the digital copy of this letter to the parent, so the parent can upload it to the form", "Pictures of the family residence", "Pictures of any vehicles owned, borrowed, etc.", "One Family picture",
+      "ITR/Certificate of Indigency/Certificate of non-filing of each parent", "Payslips for each parent covering the most recent Three months", "Utility bills covering a three-month period (electricity, phone, internet, water, credit cards)", "Letter of intent, stating the reason/s for requesting financial aid"
+    ],
+      steps: ["Application for scholarship and financial aid is done on a yearly basis. The application period is announced on this site. Please SUBMIT ON TIME, so that the Financial Aid Committee can have enough time to deliberate on the applications.",
+      "Applications for RENEWAL OF FINANCIAL AID/SCHOLARSHIPS should also be submitted ON TIME.",
+      "Application is through an ONLINE FORM, which will be opened during the application period. Accomplish the form and upload all the requirements.",
+      "SCANNED documents and pictures will be uploaded to the form, so prepare the following ahead of time in order for submission to be done WITHIN the application period.",
+    ]
+  },
+  { 
     title: "SM Scholarship Program", 
     provider: "Private", 
     level: "College", 
@@ -812,6 +829,39 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
       "Wait for shortlist notification.",
       "Attend the panel interview.",
       "Participate in the leadership camp (if part of the program)."
+    ]
+  },
+    { 
+    title: "Aboitiz Foundation", 
+    provider: "Private", 
+    level: "College", 
+    tags: ["Leadership", "GWA 88%"], 
+    link: "https://ayalafoundation.org/",
+    eligibility: [
+      "A sophomore student enrolled in any of the partner universities", "Enrolled in a degree identified by the Foundation",
+      "First year college GPA/GWA of at least 88% or equivalent",
+      " No failing/incomplete grade in any subject",
+      "must be enrolled in a public or state university",
+      "No record of disciplinary action"
+    ],
+    requirements: [
+      "Copy of Student ID",
+      "Copy of Certificate of Good Moral Character",
+      "Copy of 1st Year College Grades / - Transcript of Records",
+      "Copy of Certificate of Enrollment/Registration",
+      "Copy of Certificates of College Leadership / Awards / Seminars",
+    ],
+    benefits: [
+      "Financial assistance",
+      "Monthly Allowance",
+      "Connectivity Allowance and Laptop", "Board Exam Subsidy"
+    ],
+    steps: [
+      "Accss the online the application form",
+      "Create an account by providing your personal details and a valid email address",
+      "Fill out the application form with accurate information.",
+      "Scan and upload the necessary documents, including your academic records and proof of financial need.",
+      "Review all details before submitting your application online."
     ]
   },
   { 
