@@ -807,7 +807,7 @@ export const REQUIREMENTS_GUIDE = {
       "Mag-request ng PSA Application Form para sa Birth Certificate.",
       "Kumpletuhin ito at ipakita ang iyong valid government-issued ID.",
       "Magbayad ng processing/service fee (approx. ₱195).",
-      "Kunin ang claim stub at bumalik pagkalipas ng 3-5 araw."
+      "Kunin ang claim stub at bumalik pagkalipas ng 3-5 araw."]
     },
     cityHall: {
     title: "PSA Birth Certificate (City Hall)",
