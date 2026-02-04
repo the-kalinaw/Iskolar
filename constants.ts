@@ -79,39 +79,41 @@ export const UNIVERSITIES: University[] = [
   },
   { 
     name: "De La Salle Medical and Health Sciences Institute", 
+    address: "Dasmariñas, Cavite",
     categories: ["Medical"], 
     type: "Private", 
     link: "https://academics.dlsmhsi.edu.ph/admissions", 
     requirements: ["Photocopy of Birth Certificate", "Original Form 138 (Grade 12 Card)", "Photocopy of HS Diploma"],
     offersScholarship: true,
-    applicationFee: "₱600"
+    applicationFee: "₱1,000"
   },
   { 
     name: "Mapua Malayan Colleges Laguna", 
+    address: "Cabuyao, Laguna",
     categories: ["Engineering", "IT"], 
     type: "Private", 
     link: "https://mcl.edu.ph/admissions/", 
     requirements: ["Original Grade 12 Report Card", "Good Moral Certificate", "PSA Birth Certificate", "Parent's Valid ID", "1.5 x 1.5 ID Picture"],
     offersScholarship: true,
-    applicationFee: "₱500"
+    applicationFee: "₱400"
   },
   { 
     name: "Philippine Women’s University", 
     address: "1743 Taft Ave, Malate, Manila", 
-    categories: ["General"], 
+    categories: ["General", "Education", "Arts & Design", "Social Sciences"], 
     type: "Private", 
     link: "https://www.pwu.edu.ph/", 
-    requirements: ["Form 138 (Original & Photocopy)", "Letter of Recommendation", "Good Moral Certificate", "PSA Birth Certificate", "Two 1.5 x 1.5 ID Pictures"],
+    requirements: ["Form 138 (Original & Photocopy)", "Letter of Recommendation", "Good Moral Character Certificate", "PSA Birth Certificate", "Two 1.5 x 1.5 ID Pictures", "Art Test for Bachelor of Fine Arts (BFA) or Bachelor of Science in Interior Design (BSID)", "Video Audition for Bachelor of Music (BM) applicants"],
     offersScholarship: true,
     applicationFee: "₱500"
   },
   { 
     name: "University of the East", 
     address: "2219 Recto Ave, Manila", 
-    categories: ["General"], 
+    categories: ["General", "Social Sciences", ], 
     type: "Private", 
     link: "https://www.ue.edu.ph/mla/", 
-    requirements: ["Original Form 138 (or Form 137A)", "Latest Good Moral Certificate", "PSA Authenticated Birth Certificate"],
+    requirements: ["Original Form 138 (or Form 137A)", "Latest Good Moral Character Certificate", "PSA Authenticated Birth Certificate", "Certificate of Batch Ranking "],
     offersScholarship: true,
     applicationFee: "₱600"
   },
@@ -783,9 +785,9 @@ export const DRIVE_LINK = "https://drive.google.com/drive/folders/1eg7_IZbBT66tW
 
 export const GENERAL_QUALIFICATIONS: string[] = [
   "Nakatapos ng Grade 12 o ALS/PEPT (or equivalent)",
-  "May sapat na dokumento: PSA Birth Certificate, Form 137 / 138, Certificate of Good Moral",
+  "May sapat na dokumento: PSA Birth Certificate, Form 137 / 138, Certificate of Good Moral Character",
   "Handang sumailalim sa entrance exam o scholarship screening (depende sa school)",
-  "Magkaroon ng updated 2x2 ID photo at contact information"
+  "Mayroong updated 2x2 ID photo at contact information"
 ];
 
 export const REQUIREMENTS_GUIDE = {
@@ -794,27 +796,40 @@ export const REQUIREMENTS_GUIDE = {
     steps: [
       "Pumunta sa Barangay Hall at mag-fill up ng request form.",
       "Ibigay sa Barangay Officer ang form at magdala ng valid ID, request letter, at proof of no business.",
+      "Sabihin na para sa College Application o Scholarship program ang pagkuha.",
       "Libre ito at walang babayaran."
     ]
   },
-  cityHall: {
+  Calamba: {
     title: "PSA Birth Certificate (SM Calamba)",
     steps: [
       "Pumunta sa SM Calamba 3rd Floor (Satellite Office) o City Hall.",
       "Mag-request ng PSA Application Form para sa Birth Certificate.",
+      "Kumpletuhin ito at ipakita ang iyong valid government-issued ID.",
       "Magbayad ng processing/service fee (approx. ₱195).",
       "Kunin ang claim stub at bumalik pagkalipas ng 3-5 araw."
+
+    },
+    cityHall: {
+    title: "PSA Birth Certificate (City Hall)",
+    steps: [
+      "Pumunta sa Container Van 2 - Window 5 at humingi ng PSA form.",
+      "Sagutan ang PSA form na ibibigay ng kanilang empleyado.",
+      "Ipasa ang PSA form at ipakita ang valid ID.",
+      "Magbibigay ng order of payment para sa service fee na babayaran sa Container Van 3 - Window 8.",
+      "Bumalik sa Container Van 2 - Window 5 at bayaran naman ang makukuhang PSA birth certificate.",
+      "Bibigyan kayo ng claim stub para malaman kung kailan maaaring makuha ang PSA copy.",
     ]
   },
   school: {
     title: "Paaralan (Admin/Principal)",
     steps: [
-      "Pumunta sa Principal's Office o Admin at mag-request ng mga kailangang requirements",
-      "Tanungin ito sa Admin kung magkano ang requirements",
-      "Hintayin ang email o mensahe mula sa kanila kung kailan ito maaaring makuha",
-      "Certified True Copy of Grades / Transcript of Records (TOR)",
+      "Pumunta sa Principal's Office o Admin at mag-request ng mga kailangang requirements.",
+      "Tanungin ito sa Admin kung magkano ang requirements at bayaran.",
+      "Hintayin ang email o mensahe mula sa kanila kung kailan ito maaaring makuha.",
+      ["Narito ang mga requirement na maaaring makuha:", "Certified True Copy of Grades / Transcript of Records (TOR)",
       "Certificate of Good Moral Character",
-      "Form 137 / Form 138"
+      "Form 137 / Form 138"]
     ]
   }
 };
@@ -822,7 +837,7 @@ export const REQUIREMENTS_GUIDE = {
 export const APPLICATION_STEPS = [
   "Alamin ang mga requirements at deadlines ng unibersidad.",
   "Mag-register para sa admission test (karaniwang online).",
-  "Ihanda at ipasa ang mga dokumento (Birth Cert, Form 137, Good Moral).",
+  "Ihanda at ipasa ang mga dokumento (Birth Certificate, Form 137, Certificate of Good Moral Character).",
   "Maghintay ng test permit (via email o website).",
   "Kumuha ng exam o interview (kung mayroon).",
   "Hintayin ang resulta ng entrance exam.",
