@@ -113,22 +113,22 @@ export const UNIVERSITIES: University[] = [
     categories: ["General", "Social Sciences", ], 
     type: "Private", 
     link: "https://www.ue.edu.ph/mla/", 
-    requirements: ["Original Form 138 (or Form 137A)", "Latest Good Moral Character Certificate", "PSA Authenticated Birth Certificate", "Certificate of Batch Ranking "],
+    requirements: ["Original Form 138 (or Form 137A)", "Latest Good Moral Character Certificate", "PSA Authenticated Birth Certificate", "Certificate of Batch Ranking (for Valedictorian & Salutatorian)", "Certificate of Employment (for full-time working students)"],
     offersScholarship: true,
     applicationFee: "₱600"
   },
   { 
     name: "University of Santo Tomas", 
-    categories: ["General", "Medical", "Engineering", "Arts & Design"], 
+    categories: ["General", "Medical", "Business", "Arts & Design", "Law"], 
     type: "Private", 
     link: "https://ustet.ust.edu.ph/", 
-    requirements: ["2x2 ID Picture", "PSA/NSO Birth Certificate", "USTET Application Grades Form", "Grade 12 Report Card", "Cert of Top 10% (if applicable)"],
+    requirements: ["2x2 ID Picture", "PSA/NSO Birth Certificate", "USTET Application Grades Form", "Grade 12 Report Card", "Certification of Top 10% and DSWD Certificate of Indigency (for application waiver)"],
     offersScholarship: true,
     applicationFee: "₱600 (USTET)"
   },
   { 
     name: "Dualtech Training Center", 
-    categories: ["General", "IT", "Engineering"], 
+    categories: ["IT", "Engineering"], 
     type: "Private", 
     link: "https://www.dualtech.org.ph/", 
     requirements: ["Male HS Graduate", "18-22 years old", "Willing to work", "Accept terms and conditions"],
@@ -140,7 +140,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["Medical"], 
     type: "Private", 
     link: "https://www.feu-nrmf.edu.ph/admission-procedure", 
-    requirements: ["PSA Birth Certificate", "Good Moral Character", "Scholastic Records", "STEM Strand or 80% GWA"],
+    requirements: ["PSA Birth Certificate", "Certificate of Good Moral Character", "Scholastic Records (Grade 11 & 12 report cards)", "Passport size colored ID pictures", "STEM Strand or 80% GWA (for Accelerated Pathway for Medicine APMed"],
     offersScholarship: true,
     applicationFee: "₱600"
   },
