@@ -547,7 +547,7 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
       "Proof of OWWA Membership (Official Receipt or Cert)",
       "PSA Birth Certificate of applicant",
       "Form 137/138 (GWA of at least 80% with no failing grade)",
-      "Certificate of Good Moral Character"
+      "Certificate of Good Moral Character",
       "2x2 ID pictures with white background and signature",
     ],
     benefits: [
