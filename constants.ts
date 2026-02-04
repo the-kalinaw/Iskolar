@@ -181,12 +181,10 @@ export const UNIVERSITIES: University[] = [
   },
   { 
     name: "The National Aviation Academy of the Philippines", 
-    categories: ["General", "Engineering", "IT"], 
-    type: "Private", 
+    categories: ["Engineering", "IT"], 
+    type: "State", 
     link: "https://naap.edu.ph/admission-office/", 
     requirements: ["Senior High School Card", "Good Moral Character", "2 pcs 1x1 colored picture"],
-    offersScholarship: false,
-    applicationFee: "₱500"
   },
   { 
     name: "National University - Manila", 
