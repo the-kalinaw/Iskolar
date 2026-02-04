@@ -536,7 +536,7 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     eligibility: [
       "children or siblings of active OWWA member",
       "must be single",
-      "not older thatn 21 years old",
+      "not older than 21 years old",
       "must be a graduating Grade 12 student",
       "GWA of at least 80%, with no failing grade",
       "must be willing to enroll in any four or five-year baccalaureate course in a Philippine-based college"
@@ -544,7 +544,7 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     requirements: [
       "Valid passport (OFW)",
       "Valid school ID or any Valid ID of applicant",
-      "Proof of OWWA Membership (Official Receipt or Cert)",
+      "Proof of OWWA Membership (Official Receipt or Certificate)",
       "PSA Birth Certificate of applicant",
       "Form 137/138 (GWA of at least 80% with no failing grade)",
       "Certificate of Good Moral Character",
