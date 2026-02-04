@@ -650,7 +650,11 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
       "Telephone, Cellphone, and Internet bills (latest, 2 months)", "All Credit Card bills (March, April, and May)", 
       "All Bank Certificates for all investment (time deposits, stocks, bonds, etc.)", 
       "All Passbook (savings, current, online account, personal and business)", "Passport (student and parents; photocopy only pages with immigration stamp)", 
-      "Mortgage document and Official Receipts (latest, 2 months)", "Loan Payment Receipt"]
+      "Mortgage document and Official Receipts (latest, 2 months)", "Loan Payment Receipt"],
+      steps: [
+      "Apply online via the Xavier Nuvali website .",
+      "Download the GIA application form.",
+    ]
   },
   { 
     title: "SM Scholarship Program", 
