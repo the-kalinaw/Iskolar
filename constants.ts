@@ -79,7 +79,7 @@ export const UNIVERSITIES: University[] = [
   },
   { 
     name: "De La Salle Medical and Health Sciences Institute", 
-    address: "Dasmariñas, Cavite",
+    address: "Dasmariñas City, Cavite",
     categories: ["Medical"], 
     type: "Private", 
     link: "https://academics.dlsmhsi.edu.ph/admissions", 
@@ -113,21 +113,23 @@ export const UNIVERSITIES: University[] = [
     categories: ["General", "Social Sciences", ], 
     type: "Private", 
     link: "https://www.ue.edu.ph/mla/", 
-    requirements: ["Original Form 138 (or Form 137A)", "Latest Good Moral Character Certificate", "PSA Authenticated Birth Certificate", "Certificate of Batch Ranking (for Valedictorian & Salutatorian)", "Certificate of Employment (for full-time working students)"],
+    requirements: ["Original Form 138 (or Form 137A)", "Latest Good Moral Character Certificate", "PSA Authenticated Birth Certificate", "Certificate of Academic Ranking (for Valedictorian & Salutatorian)", "Certificate of Employment (for full-time working students)"],
     offersScholarship: true,
     applicationFee: "₱600"
   },
   { 
     name: "University of Santo Tomas", 
+    address: "España St, Sampaloc, Manila",
     categories: ["General", "Medical", "Business", "Arts & Design", "Law"], 
     type: "Private", 
     link: "https://ustet.ust.edu.ph/", 
-    requirements: ["2x2 ID Picture", "PSA/NSO Birth Certificate", "USTET Application Grades Form", "Grade 12 Report Card", "Certification of Top 10% and DSWD Certificate of Indigency (for application waiver)"],
+    requirements: ["2x2 ID Picture", "PSA/NSO Birth Certificate", "USTET Application Grades Form", "Grade 12 Report Card", "Certification of Top 10% Ranking and DSWD Certificate of Indigency (for application waiver)"],
     offersScholarship: true,
     applicationFee: "₱600 (USTET)"
   },
   { 
     name: "Dualtech Training Center", 
+    address: "Canlubang, Calamba",
     categories: ["IT", "Engineering"], 
     type: "Private", 
     link: "https://www.dualtech.org.ph/", 
@@ -136,85 +138,92 @@ export const UNIVERSITIES: University[] = [
     applicationFee: "FREE"
   },
   { 
-    name: "Far Eastern University - NRMF", 
+    name: "Far Eastern University - NRMF",
+    address: "Quezon City" 
     categories: ["Medical"], 
     type: "Private", 
     link: "https://www.feu-nrmf.edu.ph/admission-procedure", 
-    requirements: ["PSA Birth Certificate", "Certificate of Good Moral Character", "Scholastic Records (Grade 11 & 12 report cards)", "Passport size colored ID pictures", "STEM Strand or 80% GWA (for Accelerated Pathway for Medicine APMed"],
+    requirements: ["PSA Birth Certificate", "Certificate of Good Moral Character", "Scholastic Records (Grade 11 & 12 report cards)", "Passport size colored ID pictures", "STEM Strand or 80% GWA (for Accelerated Pathway for Medicine APMed)"],
     offersScholarship: true,
     applicationFee: "₱600"
   },
   { 
     name: "University of Asia and the Pacific", 
     address: "Pasig City", 
-    categories: ["General", "Business"], 
+    categories: ["General", "Business", "Law"], 
     type: "Private", 
     link: "https://uap.asia/", 
     requirements: ["Online Application", "Proof of Payment", "PSA Birth Certificate", "Recent Photo", "School ID", "Copy of Grades"],
     offersScholarship: true,
-    applicationFee: "₱1,000"
+    applicationFee: "₱1,000 (Private school), ₱500 (Public school)"
   },
   { 
     name: "Our Lady of Fatima University", 
+    address: "Sta. Rosa, Laguna & Valenzuela City"
     categories: ["General", "Medical"], 
     type: "Private", 
     link: "https://fatima.edu.ph/all-about-enrollment/", 
-    requirements: ["Original Grade 12 Card", "Original F137", "Certificate of Good Moral", "PSA Birth Certificate"],
+    requirements: ["Original Grade 12 Card", "Original Form-137", "Certificate of Good Moral Character", "PSA Birth Certificate", "Grade 12 SHS Diploma", "Two (2) copies of 2x2 studio photo (white BG)"],
     offersScholarship: true,
     applicationFee: "₱500"
   },
   { 
     name: "San Beda University - Manila", 
+    address: "Manila", 
     categories: ["General", "Law"], 
     type: "Private", 
     link: "https://www.sanbeda.edu.ph/manila/admissions", 
-    requirements: ["Grade 11 & 12 Report Cards", "PSA Birth Certificate", "2x2 ID Picture", "Good Moral", "Certificate of Indigency (if scholar)"],
+    requirements: ["Grade 11 & 12 Report Cards", "PSA Birth Certificate", "2x2 ID Picture", "Certificate of Good Moral Character", "Certificate of Indigency & Certificate of Academic Ranking (for applicants applying for scholarship))"],
     offersScholarship: true,
-    applicationFee: "₱600"
+    applicationFee: "₱800"
   },
   { 
     name: "Centro Escolar University", 
+    address: "Manila",
     categories: ["General", "Medical"], 
     type: "Private", 
     link: "https://admission2.ceu.edu.ph/", 
-    requirements: ["Original Form 138 or Grade 12 Card", "Good Moral Certificate", "Birth Certificate"],
+    requirements: ["Original Form 138 or Grade 12 Card", "Good Moral Character Certificate", "Certified True Copy of Birth Certificate", "2x2 ID Picture", "PWD ID (if applicable)"],
     offersScholarship: true,
-    applicationFee: "₱500"
+    applicationFee: "₱550"
   },
   { 
     name: "The National Aviation Academy of the Philippines", 
+    address: "Pasay City",
     categories: ["Engineering", "IT"], 
     type: "State", 
     link: "https://naap.edu.ph/admission-office/", 
-    requirements: ["Senior High School Card", "Good Moral Character", "2 pcs 1x1 colored picture"],
+    requirements: ["Senior High School Card", "Certificate of Good Moral Character", "2 pcs 1x1 colored picture"],
   },
   { 
     name: "National University - Manila", 
+    address: "Manila",
     categories: ["General", "IT", "Engineering"], 
     type: "Private", 
     link: "https://onlineapp.national-u.edu.ph/quest/register.php", 
-    requirements: ["PSA Birth Certificate", "2x2 Picture (White BG)", "Good Moral Character", "Grade 12 Report Card"],
+    requirements: ["PSA Birth Certificate", "2x2 Picture (White BG)", "Certificate of Good Moral Character", "Grade 12 Report Card"],
     offersScholarship: true,
-    applicationFee: "₱400"
+    applicationFee: "FREE"
   },
   { 
     name: "University of Perpetual Help Dr. Jose G. Tamayo", 
+    address: "Biñan, Laguna",
     categories: ["Medical"], 
     type: "Private", 
     link: "https://uphdjgtmedicaluniversity.edu.ph/", 
-    requirements: ["F-138 (Report Card)", "Good Moral Character", "PSA Birth Certificate", "4 pcs 2x2 ID picture"],
+    requirements: ["Form-138 (Report Card)", "Certificate of Good Moral Character", "PSA/NSO Birth Certificate", "4 pcs 2x2 ID picture"],
     offersScholarship: true,
-    applicationFee: "₱500"
+    applicationFee: "FREE"
   },
   { 
     name: "Colegio de San Juan de Letran", 
-    address: "Intramuros, Manila", 
+    address: "Calamba, Laguna", 
     categories: ["General"], 
     type: "Private", 
-    link: "https://letpass.letran.edu.ph", 
-    requirements: ["School ID (Check site for details)"],
+    link: "https://www.letran-calamba.edu.ph/admission", 
+    requirements: ["1x1 ID Picture", "Certified True Copy of Grades/Transcript of Records","PSA Birth Certificate","Certificate of Good Moral Character", "SF9/Form 138 (Report Card)", "SF10/Form 137 (permanent record)"],
     offersScholarship: true,
-    applicationFee: "₱500"
+    applicationFee: "₱200"
   },
   { 
     name: "Southville International School", 
@@ -222,36 +231,39 @@ export const UNIVERSITIES: University[] = [
     categories: ["General"], 
     type: "Private", 
     link: "https://www.southville.edu.ph/", 
-    requirements: ["2 pcs 2x2 pictures", "Clear PSA Birth Certificate"],
+    requirements: ["2 pcs 2x2 pictures", "Clear PSA Birth Certificate", "Report Card/Transcript of Records", "Certificate of Good Moral Character"],
     offersScholarship: true,
     applicationFee: "₱1,000"
   },
   { 
-    name: "Lyceum of the Philippines University - Laguna", 
-    categories: ["Hospitality", "Business"], 
+    name: "Lyceum of the Philippines University - Laguna",
+    address: "Calamba, Laguna", 
+    categories: ["Hospitality", "Business", "Social Sciences"], 
     type: "Private", 
     link: "https://lpulaguna.edu.ph/admission/", 
-    requirements: ["Form 138", "Good Moral Character", "PSA Birth Certificate", "2x2 ID Photo", "Form 137 (Student Permanent Record)"],
+    requirements: ["Form 138", "Certificate of Good Moral Character", "PSA Birth Certificate", "2x2 ID Photo", "Form 137 (Student Permanent Record)"],
     offersScholarship: true,
-    applicationFee: "₱500"
+    applicationFee: "0"
   },
   { 
     name: "De La Salle University", 
-    categories: ["Business", "General", "Engineering"], 
+    address: "Taft Avenue, Manila",
+    categories: ["Business", "General", "Engineering", "Medical", "Law", "IT", "Social Sciences"], 
     type: "Private", 
     link: "https://www.dlsu.edu.ph/admissions", 
-    requirements: ["PSA Birth Certificate", "Secondary Scholastic Record", "2x2 Photo", "Good Moral"],
+    requirements: ["PSA Birth Certificate", "Secondary Scholastic Record", "2x2 Photo", "Certificate of Good Moral Character"],
     offersScholarship: true,
-    applicationFee: "₱600"
+    applicationFee: "₱800"
   },
   { 
     name: "De La Salle-College of Saint Benilde", 
+    address: "Taft Avenue, Manila",
     categories: ["General", "Arts & Design", "Hospitality"], 
     type: "Private", 
     link: "https://www.benilde.edu.ph/admissions/", 
-    requirements: ["PSA Birth Certificate", "Scholastic Record", "AHWLD Form", "2x2 Photo"],
+    requirements: ["PSA Birth Certificate", "Secondary Scholastic Record (provided)", "AHWLD Form", "2x2 Photo"],
     offersScholarship: true,
-    applicationFee: "₱600"
+    applicationFee: "₱800"
   },
   { 
     name: "Ateneo de Manila University", 
@@ -836,9 +848,7 @@ export const REQUIREMENTS_GUIDE = {
       "Pumunta sa Principal's Office o Admin at mag-request ng mga kailangang requirements.",
       "Tanungin ito sa Admin kung magkano ang requirements at bayaran.",
       "Hintayin ang email o mensahe mula sa kanila kung kailan ito maaaring makuha.",
-      "Narito ang mga requirement na maaaring makuha:", "Certified True Copy of Grades / Transcript of Records (TOR)",
-      "Certificate of Good Moral Character",
-      "Form 137 / Form 138"
+      "Narito ang mga requirement na maaaring makuha: Certified True Copy of Grades / Transcript of Records (TOR), Certificate of Good Moral Character, Form 137 / Form 138",
     ]
   }
 };
