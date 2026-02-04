@@ -251,7 +251,7 @@ export const UNIVERSITIES: University[] = [
     categories: ["Business", "General", "Engineering", "Medical", "Law", "IT", "Social Sciences"], 
     type: "Private", 
     link: "https://www.dlsu.edu.ph/admissions", 
-    requirements: ["PSA Birth Certificate", "Secondary Scholastic Record", "2x2 Photo", "Certificate of Good Moral Character"],
+    requirements: ["PSA Birth Certificate", "Secondary Scholastic Record (provided)", "2x2 Photo", "Certificate of Good Moral Character"],
     offersScholarship: true,
     applicationFee: "₱800"
   },
@@ -261,64 +261,129 @@ export const UNIVERSITIES: University[] = [
     categories: ["General", "Arts & Design", "Hospitality"], 
     type: "Private", 
     link: "https://www.benilde.edu.ph/admissions/", 
-    requirements: ["PSA Birth Certificate", "Secondary Scholastic Record (provided)", "AHWLD Form", "2x2 Photo"],
+    requirements: ["PSA Birth Certificate", "Secondary Scholastic Record (provided)", "Applicant Health, Well-being, & Learning Disclosure (AHWLD) Form", "Recent 2x2 colored photo in JPEG or PNG"],
     offersScholarship: true,
     applicationFee: "₱800"
   },
   { 
     name: "Ateneo de Manila University", 
+    address: "Katipunan Avenue,Quezon City",
     categories: ["General", "Social Sciences", "Law", "Business"], 
     type: "Private", 
     link: "https://www.ateneo.edu/admissions", 
-    requirements: ["Personal Essay", "High School Record", "Recommendation Forms", "PSA Birth Certificate"],
+    requirements: ["Personal Essay", "High School Record", "Subject Teacher and Adviser Recommendation Forms", "Report card from Grade 9-11", "PSA Birth Certificate", " 1x1 ID Picture", "Certificate of Academic Ranking & DSWD Certificate of Indigency (for application waiver) and Public HS and public science high school students are exempted from the application fee."],
     offersScholarship: true,
     applicationFee: "₱600"
   },
   { 
     name: "Laguna College of Business and Arts", 
-    categories: ["Business"], 
+    address: "Calamba, Laguna",
+    categories: ["Business", "Arts & Design"], 
     type: "Private", 
     link: "https://lcba.edu.ph/online-enrollment", 
-    requirements: ["Form 138", "Good Moral", "SF 10 (Form 137)", "PSA Birth Certificate", "2x2 ID Picture"],
+    requirements: ["Form 138 (SHS Report Card)", "Certificate of Good Moral Character", "SF 10 (Form 137)", "PSA Birth Certificate", "2x2 ID Picture"],
     offersScholarship: true,
-    applicationFee: "₱300"
+    applicationFee: "0"
   },
   { 
     name: "FEU Institute of Technology", 
+    address: "Sampaloc, Manila",
     categories: ["IT", "Engineering"], 
     type: "Private", 
     link: "https://www.feutech.edu.ph/feutech/admission", 
-    requirements: ["FEUOCAT result", "Admissions form", "SF9 / Grade 12 report card", "Good Moral", "PSA Birth Certificate"],
+    requirements: ["FEUOCAT result", "Admissions form", "SF9 / Grade 12 report card", "Certificate of Good Moral Character", "PSA Birth Certificate"],
     offersScholarship: true,
     applicationFee: "₱500"
   },
   { 
     name: "PHINMA Rizal College of Laguna", 
-    categories: ["General", "Business"], 
+    address: "Calamba, Laguna",
+    categories: ["General", "Business", "Cadet", "Social Sciences"], 
     type: "Private", 
     link: "https://laguna.phinma.edu.ph/", 
     requirements: ["Transcript of Records", "Honorable Dismissal", "PSA Birth Certificate", "2x2 ID Photo"],
     offersScholarship: true,
-    applicationFee: "₱300"
+    applicationFee: "₱1, 500 (enrollment fee)"
   },
   { 
     name: "MOL Magsaysay Maritime Academy", 
+    address: "Dasmariñas City, Cavite",
     categories: ["Cadet"], 
     type: "Private", 
     link: "https://sms.mmma.edu.ph/padmission", 
-    requirements: ["GWA 83%+", "Form 138", "Good Moral", "PSA Birth Certificate", "Single, 17-21 years old"],
+    requirements: ["with SHS GWA of 83%+", "Form 138", "Certificate of Good Moral Character", "PSA Birth Certificate", "Single, 17-21 years old", "Physically fit, no pre-existing medical conditions"],
     offersScholarship: true,
     applicationFee: "₱500"
   },
+  {
+    name: "University of Perpetual Health System Dalta- Calamba",
+    address: "Calamba, Laguna",
+    categories: ["Medical", "Education", "Engineering", "Business", "Hospitality"],
+    type: "Private", 
+    link: "https://perpetualdalta.edu.ph/new/calamba-campus-home/", 
+    requirements: ["SF9 (Original Report Card)", "Certificate of Good Moral Character", "PSA Birth Certificate", "2x2 picture (3pcs.)", "Ishihara Medical Test Result forDoctor of Dental Medicine and Aviation Electronic Technology"],
+    offersScholarship: true,
+    applicationFee: "FREE"
+  },
+  {
+  name: "Calamba Doctors College",
+    address: "Calamba, Laguna",
+    categories: ["Medical"],
+    type: "Private", 
+    link: "https://calambadoctorscollege.edu.ph/", 
+    requirements: ["Form 138 (SHS Card)", "Form 137 with remarks “Copy for Calamba Doctors’ College” (original)", "Certificate of Good Moral Character with school dry seal", "PSA Birth Certificate", "2x2 picture (formal, white background)", "Photocopy of SHS Diploma"],
+    offersScholarship: true,
+    applicationFee: "FREE"
 
+  },
+  {
+    name: "National University - Calamba",
+    address: "Calamba, Laguna",
+    categories: ["Engineering", "IT", "Education"],
+    type: "Private", 
+    link: "https://www.national-u.edu.ph/nu-laguna/", 
+    requirements: ["Grade 12 Report Card", "Certificate of Good Moral Character", "PSA Birth Certificate", "2x2 colored ID picture", "Photocopy of Diploma (for ALS A&E passers)", "Certificate of Passing & Certificate of Rating (for Philippine Educational Placement Test (PEPT) and Alternative Learning System Accreditation and Equivalency (ALS A&E)"],
+    offersScholarship: true,
+    applicationFee: "FREE"
+  },
+  {
+    name: "Saint Michael's College of Laguna",
+    address: "Biñan, Laguna",
+    categories: ["Business","Hospitality","IT","Education"],
+    type: "Private", 
+    link: "https://www.smcl.edu.ph/", 
+    requirements: ["Grade 12 Report Card (Form 138", "Certificate of Good Moral Character", "PSA Birth Certificate", "1x1 ID picture", "Completed Application Form"],
+    offersScholarship: true,
+    applicationFee: "FREE"
+
+  },
+  {
+    name: "STI College - Calamba",
+    address: "Calamba, Laguna",
+    categories: ["IT", "Hospitality", "Arts & Design"],
+    type: "Private", 
+    link: "https://www.sti.edu/admissions.asp", 
+    requirements: ["Form 138 (SHS Card)", "Form 137", "Certificate of Good Moral Character or Recommendation from the Principal", "PSA Birth Certificate", "Medical Certificate of Chect X-ray results", "Medical Certificate of Hepatitis A & B Screening (for BS Hopitality Management, BS Culinary Management, Hotel & Restaurant Administration, or Hospitality and Restaurant Services)"],
+    offersScholarship: true,
+    applicationFee: "₱1,000"
+  },
+  {
+    name: "Phil-Nippon Technical College Inc. - Calamba",
+    address: "Calamba, Laguna",
+    categories: ["Engineering"],
+    type: "Private", 
+    link: "https://www.facebook.com/p/PNTC-Phil-Nippon-Technical-College-61557287609672/", 
+    requirements: ["Duly accomplished application form", "Certificate of Good Moral Character", "PSA Birth Certificate", "Transcript of Records/ Report Card"],
+    offersScholarship: true,
+    applicationFee: "0"
+  },
   { 
     name: "Pamantasan ng Cabuyao", 
     address: "Cabuyao, Laguna", 
     categories: ["General"], 
     type: "State", 
     link: "https://iadmit.pnc.edu.ph/", 
-    requirements: ["Affidavit of Undertaking (Notarized)", "Certificate of Enrollment", "PSA Birth Certificate", "Good Moral", "Voter's Certificate", " Two copies of 2x2 and Four copies of 1x1 colored ID picture with nametag",
-                  "long white folder and long plastic envelope"] 
+    requirements: ["Affidavit of Undertaking (Notarized)", "Certificate of Enrollment", "PSA Birth Certificate", "Certificate of Good Moral Character", "Voter's Certificate", " Two copies of 2x2 and Four copies of 1x1 colored ID picture with nametag", "long white folder and long plastic envelope"] 
   },
   { 
     name: "University of the Philippines - Manila", 
@@ -329,21 +394,24 @@ export const UNIVERSITIES: University[] = [
   },
   { 
     name: "Technological University of the Philippines - Manila", 
-    categories: ["General", "Engineering"], 
+    address: "Manila",
+    categories: ["General", "Engineering", "Arts & Design", "IT"], 
     type: "State", 
     link: "https://tup.edu.ph/undergraduate/admission/", 
-    requirements: ["SHS Form 138-A", "Two 2x2 pictures", "Grade 11 Report Card", "Good Moral Character"] 
+    requirements: ["SHS Form 138-A", "Two 2x2 pictures", "Grade 11 Report Card", "Certificate ofGood Moral Character"] 
   },
   { 
     name: "Technological University of the Philippines - Taguig", 
-    categories: ["Engineering"], 
+    address: "Taguig, Manila",
+    categories: ["Engineering", "IT"], 
     type: "State", 
     link: "https://www.tupt.edu.ph/progoff", 
     requirements: ["Photocopy of Grade 11 Report Card", "Printed ERS Application Form", "Transcript of Records (Transferees)"] 
   },
   { 
     name: "University of the Philippines - Diliman", 
-    categories: ["General", "Law", "Education"], 
+    address: "Quezon City",
+    categories: ["General", "Law", "Education", "Hospitality", "Engineering", "Arts & Design", "Social Sciences"], 
     type: "State", 
     link: "https://upcat.up.edu.ph/", 
     requirements: ["Certified True Copy of Form 137", "2x2 Picture with signature", "Parent Certification"] 
@@ -351,7 +419,7 @@ export const UNIVERSITIES: University[] = [
   { 
     name: "Pamantasan Lungsod ng Maynila", 
     address: "Intramuros, Manila", 
-    categories: ["General"], 
+    categories: ["General", "Business", "Medical"], 
     type: "State", 
     link: "https://plm.edu.ph/admissions", 
     requirements: ["PSA Birth Certificate", "Grade 11 Report Card", "Certification of GWA - Grade 11", "ALS completers and Accreditation & Equivalency - Certificate of Completion"] 
@@ -359,7 +427,7 @@ export const UNIVERSITIES: University[] = [
   { 
     name: "Batangas State University", 
     address: "Batangas", 
-    categories: ["General"], 
+    categories: ["General", "Engineering", "Education", "Hospitality", "Business"], 
     type: "State", 
     link: "https://batstateu.edu.ph/admissions/", 
     requirements: ["E-copy of Application Form", "Passport size picture", "Certified Grades", "Grade Form 1 (regular admission", "Grades Form 2 (ALS)", 
@@ -368,14 +436,15 @@ export const UNIVERSITIES: University[] = [
   { 
     name: "Laguna State Polytechnic University", 
     address: "Sta. Cruz, Laguna", 
-    categories: ["General", "IT"], 
+    categories: ["General", "IT", "Engineering", "Education", "Business", "Hospitality"], 
     type: "State", 
     link: "https://admissions.lspusys.com/", 
-    requirements: ["Recent 2x2 ID picture on white background", "Certified True Copy of Grade 11 report card", "Original Form 137", "Certificate of Good Moral", "Birth Certificate"] 
+    requirements: ["Recent 2x2 ID picture on white background", "Certified True Copy of Grade 11 report card", "Original Form 137", "Certificate of Good Moral", "PSA/NSO Birth Certificate"] 
   },
   { 
     name: "Philippine Normal University", 
-    categories: ["Education"], 
+    address: "Manila",
+    categories: ["Education", "Social Sciences"], 
     type: "State", 
     link: "https://www.pnu.edu.ph/admissions/", 
     requirements: ["Signed PWEBSS Form", "High School Scholastic Record", "Certificate of Enrollment or Registration", "Declaration as a New Student", "Recommendation Form", "Personal Statement",
@@ -384,35 +453,38 @@ export const UNIVERSITIES: University[] = [
   { 
     name: "Laguna University", 
     address: "Sta. Cruz, Laguna", 
-    categories: ["IT", "General"], 
+    categories: ["IT", "General", "Education", "Business", "Social Sciences"], 
     type: "State", 
     link: "https://lu.edu.ph/", 
-    requirements: ["Scanned Grade 12 Report Card", "Form 137-A / SF10", "Certificate of Good Moral", "Birth Certificate"] 
+    requirements: ["Scanned Grade 12 Report Card", "Form 137-A / SF10", "Certificate of Good Moral Character", "Birth Certificate"] 
   },
   { 
     name: "City College of Calamba", 
     address: "Calamba, Laguna", 
-    categories: ["General", "Education"], 
+    categories: ["Business", "Education", "IT"], 
     type: "State", 
     link: "https://ccc.edu.ph/admissions", 
-    requirements: ["Online Admission Form", "Photocopy of Grade 11 & 12 Cards", "Photocopy of PSA/NSO Birth Certificate", "Photocopy of Certificate of Good Moral", "Barangay Certificate of Residency", "Voter's ID", "Three copies of 2x2 ID picture on white background"] 
+    requirements: ["Online Admission Form", "Photocopy of Grade 11 & 12 Cards", "Photocopy of PSA/NSO Birth Certificate", "Photocopy of Certificate of Good Moral Character", "Barangay Certificate of Residency", "Voter's ID", "Three copies of 2x2 ID picture on white background"] 
   },
   { 
     name: "University of the Philippines - Los Baños", 
-    categories: ["Social Sciences"], 
+    address: "Los Baños, Laguna",
+    categories: ["Social Sciences", "Medical", "Social Sciences", "General", "Business", "Engineering"], 
     type: "State", 
     link: "https://upcat.up.edu.ph/", 
     requirements: ["Certified True Copy of Form 137", "2x2 Picture with signature", "Parent Certification"] 
   },
   { 
     name: "Rizal Technological University", 
-    categories: ["General", "IT", "Engineering"], 
+    address: "Mandaluyong City",
+    categories: ["General", "IT", "Engineering", "Business", "Education"], 
     type: "State", 
     link: "https://www.rtu.edu.ph/", 
-    requirements: ["2x2 ID Picture on blue background", "Report Cards", "Certificate of Good Moral", "Valid ID", "Complete Online Application"] 
+    requirements: ["2x2 ID Picture on blue background", "Report Cards", "Certificate of Good Moral Character", "Valid ID", "Complete Online Application"] 
   },
   { 
     name: "Philippine Military Academy", 
+    address: "Baguio City",
     categories: ["Cadet"], 
     type: "Government", 
     link: "https://admission.pma.edu.ph", 
@@ -420,6 +492,7 @@ export const UNIVERSITIES: University[] = [
   },
   { 
     name: "Philippine National Police Academy", 
+    address: "Silng, Cavite",
     categories: ["Cadet"], 
     type: "Government", 
     link: "https://www.pnpacatoas.com", 
@@ -427,6 +500,7 @@ export const UNIVERSITIES: University[] = [
   },
   { 
     name: "Philippine Merchant Marine Academy", 
+    address: "Zambales City",
     categories: ["Cadet"], 
     type: "Government", 
     link: "https://admissions.pmma.edu.ph/", 
@@ -435,7 +509,8 @@ export const UNIVERSITIES: University[] = [
   },
   { 
     name: "Polytechnic University of the Philippines - Manila", 
-    categories: ["General", "IT", "Engineering", "Hospitality"], 
+    address: "Manila",
+    categories: ["General", "IT", "Engineering", "Hospitality", "Business", "Arts & Design", "Education", "Social Sciences"], 
     type: "State", 
     link: "https://www.pup.edu.ph/applicants/", 
     requirements: ["2x2 colored photo", "Grade 11 report card with GWA"] 
@@ -848,7 +923,7 @@ export const REQUIREMENTS_GUIDE = {
       "Pumunta sa Principal's Office o Admin at mag-request ng mga kailangang requirements.",
       "Tanungin ito sa Admin kung magkano ang requirements at bayaran.",
       "Hintayin ang email o mensahe mula sa kanila kung kailan ito maaaring makuha.",
-      "Narito ang mga requirement na maaaring makuha: Certified True Copy of Grades / Transcript of Records (TOR), Certificate of Good Moral Character, Form 137 / Form 138",
+      "Narito ang mga requirements na maaaring makuha: Certified True Copy of Grades / Transcript of Records (TOR), Certificate of Good Moral Character, Form 137 / Form 138",
     ]
   }
 };
