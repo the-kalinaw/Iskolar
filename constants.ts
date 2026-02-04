@@ -697,10 +697,20 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     level: "College", 
     tags: ["Leadership", "Filipino", "GWA 85%"], 
     link: "https://ayalafoundation.org/",
+    eligibility: [
+      "must be a Filipino citizen", "must be a Female",
+      "incoming 1st year, 2nd year, or 3rd year college students",
+      "must be taking a 5-year course",
+      "must be enrolled in a public or state university",
+      "GPA of at least 85%",
+      "without any disciplinary issue or administrative cases"
+    ],
     requirements: [
       "Accomplished Application Form",
+      "Registration or Enrollment Certificate",
       "Certified True Copy of Grades (GWA 85% or higher)",
-      "Proof of Family Income (ITR or Indigency)",
+      "Proof of Family Income (ITR or Certificate of Indigency)",
+      "Latest copy of water bill and/or electricity bill",
       "Recommendation Letter from Principal/Guidance Counselor",
       "Essay on leadership and community service"
     ],
