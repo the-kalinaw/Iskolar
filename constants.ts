@@ -631,17 +631,45 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     requirements: ["SHS final report card", "service record", "latest payslip (verified SG 15 status","GSIS touch account", "updated IDs and certifications (if Solo Parent / IP / PWD)"]
   },
   { 
+    title: "Xavier School Nuvali Grant-in-Aid (GIA)", 
+    provider: "Private", 
+    level: "SHS/JHS", 
+    tags: ["Financial Aid"], 
+    link: "https://xsn.edu.ph/financial-aid/scholarship-application",
+    eligibility: ["incoming grade 7 students and transferees"],
+    requirements: ["Completed GIA application form", "Letter of Intent", 
+      "recent 1.5 x 1.5 photo of the student (taken within the latest three months)",
+      "recent 3R family picture (taken within the last three months)", 
+      "Photocopy of the report card from the previous school year and the current school year - 1st Quarter should not have no failing marks",
+      "Location Map of Residence", "recent 3R picture of permanent residence", "recent 3R picture of kitchen",
+      "Certificate of Employment", "Business Registration, Permit, License, or Accreditation Certificate from DTI, SEC, LFTRB, City Hall",
+      "Payslip of Parent/s and working sibling/s (latest, 2 months)", "Last available payslip and ITR for those who lost their job",
+      "A copy of parent/s of latest ITR; or BIR Certification of Exemption from filing ITR; or Annual Income Tax Return for those who have their own businesses", 
+      "Certification of Tuition Fee payment of children studying (previous school year and current school year)",
+      "Electric bills, Cable bills (March, April, and May)", "Water bills (March, April, and May)", 
+      "Telephone, Cellphone, and Internet bills (latest, 2 months)", "All Credit Card bills (March, April, and May)", 
+      "All Bank Certificates for all investment (time deposits, stocks, bonds, etc.)", 
+      "All Passbook (savings, current, online account, personal and business)", "Passport (student and parents; photocopy only pages with immigration stamp)", 
+      "Mortgage document and Official Receipts (latest, 2 months)", "Loan Payment Receipt"]
+  },
+  { 
     title: "SM Scholarship Program", 
     provider: "Private", 
     level: "College", 
-    tags: ["Merit", "Income < 150k", "GWA 88%"], 
+    tags: ["Merit", "Income < 150k", "GWA 92%"], 
     link: "https://www.sm-foundation.org/",
+    eligibility: ["Grade 12 graduates from public and private schools in the areas covered", "Applicants from private schools must have a DepEd voucer and must be Grade 10 finishers from public high schools",
+      "GWA of at least 92%", "annual income of less than ₱250,000"
+    ],
     requirements: [
       "Online Application Form",
-      "High School Report Card (GWA 88% or better)",
-      "Parents' ITR or Certificate of Non-Filing of Tax (Income < ₱150,000/year)",
-      "Utility Bills (Electricity/Water) to prove residency",
-      "Sketch of home location"
+      "Birth Certificate",
+      "Latest Grade 12 report card",
+      "Latest ITR of parent/s or guardian",
+      "Certificate of Non-Filing of Income",
+      "Certificate of Indigency",
+      "Two copies of 2x2 ID picture",
+      "Sketch of home location to the nearest SM mall"
     ],
     benefits: [
       "Full Tuition and Miscellaneous Fees",
