@@ -763,6 +763,25 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     ]
   },
   { 
+    title: "APEC Schools Financial Assistance Programs", 
+    provider: "Private", 
+    level: "SHS/JHS", 
+    tags: ["Financial Aid"], 
+    link: "https://apecschools.edu.ph/scholarship/",
+    eligibility: [
+      "(Family Discount) must have at least 2 immediate family members enrolled in APEC schools", "(Ayala Group Discount) applicable to all qualified dependents of Ayala Group employees",
+    ],
+    requirements: ["PSA/NSO Birth Certificate (include page 2)", "Recent ID picture", "Completed report card (Grade 5/6/7/8, whichever would apply)", "Most recent official copy of current grade level card (Grade 6/7/8/9, whichever applies)",
+      "Signed Letter of Recommendation from the Homeroom Teacher of the current year (The teacher should send the digital copy of this letter to the parent, so the parent can upload it to the form", "Pictures of the family residence", "Pictures of any vehicles owned, borrowed, etc.", "One Family picture",
+      "ITR/Certificate of Indigency/Certificate of non-filing of each parent", "Payslips for each parent covering the most recent Three months", "Utility bills covering a three-month period (electricity, phone, internet, water, credit cards)", "Letter of intent, stating the reason/s for requesting financial aid"
+    ],
+      steps: ["Application for scholarship and financial aid is done on a yearly basis. The application period is announced on this site. Please SUBMIT ON TIME, so that the Financial Aid Committee can have enough time to deliberate on the applications.",
+      "Applications for RENEWAL OF FINANCIAL AID/SCHOLARSHIPS should also be submitted ON TIME.",
+      "Application is through an ONLINE FORM, which will be opened during the application period. Accomplish the form and upload all the requirements.",
+      "SCANNED documents and pictures will be uploaded to the form, so prepare the following ahead of time in order for submission to be done WITHIN the application period.",
+    ]
+  },
+  { 
     title: "SM Scholarship Program", 
     provider: "Private", 
     level: "College", 
