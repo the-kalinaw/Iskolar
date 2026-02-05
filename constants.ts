@@ -836,7 +836,7 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     provider: "Private", 
     level: "College", 
     tags: ["Leadership", "GWA 88%"], 
-    link: "https://ayalafoundation.org/",
+    link: "https://aboitiz.com/our-businesses/aboitiz-foundation/aboitiz-future-leaders-scholarship ",
     eligibility: [
       "A sophomore student enrolled in any of the partner universities", "Enrolled in a degree identified by the Foundation",
       "First year college GPA/GWA of at least 88% or equivalent",
