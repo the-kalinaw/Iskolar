@@ -377,6 +377,16 @@ export const UNIVERSITIES: University[] = [
     offersScholarship: true,
     applicationFee: "0"
   },
+  {
+    name: "AMA Computer College - Calamba",
+    address: "Calamba, Laguna",
+    categories: ["Engineering", "IT", "Education"],
+    type: "Private", 
+    link: "http://www.ama.edu.ph/index.html", 
+    requirements: ["Accomplished application form", "Certificate of Good Moral Character with school dry seal", "PSA Birth Certificate", "Original Report Card (Form 138)", "2x2 Pictures w/ White BG and name tag"],
+    offersScholarship: true,
+    applicationFee: "0"
+  },
   { 
     name: "Pamantasan ng Cabuyao", 
     address: "Cabuyao, Laguna", 
