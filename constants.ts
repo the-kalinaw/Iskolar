@@ -380,13 +380,54 @@ export const UNIVERSITIES: University[] = [
   {
     name: "AMA Computer College - Calamba",
     address: "Calamba, Laguna",
-    categories: ["Engineering", "IT", "Education"],
+    categories: ["Engineering", "IT", "Business"],
     type: "Private", 
     link: "http://www.ama.edu.ph/index.html", 
     requirements: ["Accomplished application form", "Certificate of Good Moral Character with school dry seal", "PSA Birth Certificate", "Original Report Card (Form 138)", "2x2 Pictures w/ White BG and name tag"],
     offersScholarship: true,
+    applicationFee: "1,000"
+  },
+  {
+    name: "Colegio De Los Baños",
+    address: "Los Baños, Laguna",
+    categories: ["IT", "Education", "Business"],
+    type: "Private", 
+    link: "https://www.cdlb.edu.ph/", 
+    requirements: ["Photocopy of SHS Diploma", "Certificate of Good Moral Character", "PSA/NSO Birth Certificate", "Form 137 & Form 138 (Grade 12)", "2x2 ID Picture (2 pcs.)", "1x1 ID Picture (2 pcs.)"],
+    offersScholarship: true,
+    applicationFee: "1,000"
+  },
+  {
+    name: "Dos Bosco College - Canlubang",
+    address: "Calamba, Laguna",
+    categories: ["Engineering", "IT", "Education"],
+    type: "Private", 
+    link: "https://donboscocanlubang.edu.ph/#", 
+    requirements: ["Baptismal Certificate", "DBC Application Form", "DBS Recommendation Form", "PSA Birth Certificate", "Report Card (Form 138)/ Transcript of Records", "2x2 ID Picture"],
+    offersScholarship: true,
+    applicationFee: "400"
+  },
+  {
+    name: "Mary Help of Christians College - Salesians Sisters, Inc - Canlubang",
+    address: "Calamba, Laguna",
+    categories: ["Education"],
+    type: "Private", 
+    link: "https://www.maryhelpcanlubang.com/", 
+    requirements: ["Original Copy ofPSA Birth Certificate", "Original Copy of Current Report Card"],
+    offersScholarship: true,
     applicationFee: "0"
   },
+  {
+    name: "San Pablo Colleges",
+    address: "San Pablo City, Laguna",
+    categories: ["Education"],
+    type: "Private", 
+    link: "https://sanpablocolleges.edu.ph/", 
+    requirements: ["Original Copy ofPSA Birth Certificate", "Original Copy of Current Report Card"],
+    offersScholarship: true,
+    applicationFee: "0"
+
+  }
   { 
     name: "Pamantasan ng Cabuyao", 
     address: "Cabuyao, Laguna", 
