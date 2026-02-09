@@ -426,8 +426,7 @@ export const UNIVERSITIES: University[] = [
     requirements: ["Original Copy ofPSA Birth Certificate", "Original Copy of Current Report Card"],
     offersScholarship: true,
     applicationFee: "0"
-
-  }
+  },
   { 
     name: "Pamantasan ng Cabuyao", 
     address: "Cabuyao, Laguna", 
