@@ -981,7 +981,68 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
       "Submit supporting documents regarding parent's frontliner status.",
       "Wait for screening and evaluation results."
     ]
-  }
+  },
+{ 
+    title: "Megaworld Foundation", 
+    provider: "Private", 
+    level: "College", 
+    tags: ["STEM", "GWA 85%"], 
+    link: "https://www.megaworldfoundation.com/scholarship_program",
+    requirements: [
+      "Final grade report in senior high school with an average of at least 85% or its equivalent; and with at least 80% grade in all subjects.",
+      "A passing result from a university entrance exam, letter of admission or certificate of enrollment.",
+      "A certificate of upper 10% class ranking of graduating batch (if available)",
+      "All grade reports from previous semesters to the current semester with a GPA of at least 85% or its equivalent, and with at least 80% grade in all subjects",
+      "A full load enrollment assessment/registration form with class schedule",
+      "Complete and most updated course curriculum", "Income Tax Return (ITR) not exceeding Php 400,000.00 combined gross annual income (original copy) or BIR Tax Exemption Certificate of Father and Mother and Affidavit of Non-filing of Income Tax",
+      "Birth certificate","Endorsement letter from the College or University (if available)",
+      "Utility bills such as rent, electricity, water, telephone, internet, etc.", 
+      "2 pcs. - 2X2 I.D. pictures and 2 pcs. - 1X1 I.D. pictures", "Photograph of applicant with family/guardian"
+    ],
+    benefits: [
+      "Full Tuition Fee",
+      "Allowance",
+      "Volunteerism Activities and Seminars", "Career Opportunities"
+    ],
+    steps: [
+      "Upon completion of the above requirements, the applicant shall be asked to fill out certain documents and shall undergo interviews to further assess qualifications",
+    ]
+  },
+  { 
+    title: "Landbank", 
+    provider: "Private", 
+    level: "College", 
+    tags: ["Agriculture", "Allowance"], 
+    link: "https://www.landbank.com/about-landbank/iskolar-ng-landbank",
+    eligibility: ["Child or grandchild of an agrarian reform beneficiary, or a small farmer/fisher",
+      "Recommended by a LANDBANK agriculture-based client cooperative, association, and organization in the identified provinces.",
+      "Graduating high school student with a minimum average grade of or belonging to the top of their class.",
+      "Endorsed by the high school principal", "Does not enjoy any other financial assistance, grant, or scholarship from other external sources.",
+      "Must pass the admission requirements of any SIJC's within the province.",
+      "Total annual family income must not exceed P300,000.00; with exemptions on a case-to-case basis."
+    ],
+    requirements: [
+      "Certified true copy of grades with school seal.",
+      "Letter of recommendation from the school principal",
+      "Endorsement letter from LANDBANK (agriculture-related client cooperative, association, or organization)",
+      "500-word essay on “Why I am pursuing a career in (course to be taken)?” and “How does LANDBANK help in nation building?”",
+      "PSA/NSO-certified Birth Certificate",
+      "Proof of registration to RSBSA Registry System for Basic Sectors in Agriculture (RSBSA) or Certification from the Municipal Agriculture Office (MAO) or the Municipal Agrarian Reform Office (MARO)",
+      "Photocopy of Proof of Income","Certificate of good moral character",
+      "Barangay Clearance from the applicant's home barangay", 
+      "2 pcs. - 2X2 I.D. pictures"
+    ],
+    benefits: [
+      "Monthly allowance/stipend","Book allowance and other academic requirements",
+      "Clothing/uniform/shoes allowance",
+      "Special Cash Incentives for scholars graduating with honors", "Family Support: Prioritizes dependents of agrarian reform: beneficiaries, small farmers, and fishers",
+      "₱50,000 per semester. Total Annual Grant: ₱100,000.00"
+    ],
+    steps: [
+      "Complete the application and submit required documents",
+    ]
+  },
+  
 ];
 
 export const REVIEWERS: ReviewerLink[] = [
