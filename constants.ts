@@ -1042,6 +1042,26 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
       "Complete the application and submit required documents",
     ]
   },
+  { 
+    title: "Dowell Scholarship Program", 
+    provider: "Private", 
+    level: "College", 
+    tags: ["Tuition Fee", "GWA 93%"], 
+    link: "https://owwascholarship.com/dowell-scholarship/",
+    eligibility: ["Must be a Filipino Citizen", "Open to incoming and ongoing college students", "Must have a College GWA of at least 1.50",
+      "Senior High School graduates should have at least 93% per subject", "Must follow and like Dowell’s official pages on Facebook, Instagram, TikTok, and subscribe to their YouTube channel"
+    ],
+    requirements: [
+      "Certificate of Good Moral Character from Previous / Current School",
+    "Certified True Copy of Report Card S.Y. 2024-2025", "E-signature", "Certificate of Registration A.Y. 2025-2026"    
+  ],
+    benefits: [
+      "Financial assistance covering tuition fees", "Support for other education-related expenses"
+    ],
+    steps: [
+      "Complete the online form."
+    ]
+  },
   
 ];
 
