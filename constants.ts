@@ -738,7 +738,7 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     provider: "Government", 
     level: "College", 
     tags: ["Provincial", "Financial Aid"], 
-    link: "https://www.facebook.com/LagunaProvincialCapitol",
+    link: "https://www.facebook.com/SolAragonesOfficial",
     requirements: [
       "Duly accomplished Application Form",
       "Certificate of Registration/Enrollment (COR)",
