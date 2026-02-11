@@ -708,7 +708,7 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
     tags: ["OFW Dependent", "GWA 80%"], 
     link: "https://scholarship.owwa.gov.ph/",
     eligibility: ["OFW","child of sibling of a single or married but childless OFW who is an active OWWA member", 
-      "not older ther 21 years old", "annual income of less than $2,400", 
+      "not older than 21 years old", "annual income of less than $2,400", 
       "GWA of at least 80%, with no failing grade", 
       "must be willing in courses under Science and Technology in any Philippine-based college"],
     requirements: [
@@ -756,6 +756,76 @@ export const SCHOLARSHIPS: ScholarshipEntry[] = [
       "Submit requirements to your Municipal Coordinator or Provincial Capitol.",
       "Wait for the validation and screening process.",
       "Attend the mass payout distribution if approved."
+    ]
+  },
+  {
+    title: "Junior High School (JHS) Science Scholarship Program", 
+    provider: "Government", 
+    level: "College", 
+    tags: ["3rd year College", "Degree programs in Science and Technology", "financial aid"], 
+    link: "https://jlss.science-scholarships.ph/",
+    eligibility: ["Regular 2nd Year Student (Enrolled in DOST-SEI priority course at identified university.)","General Weighted Average ≥ 83%, No failing or conditional marks.", 
+      "Natural-born Filipino citizen.", "Good Moral Character and Good Health", 
+      "Did Not Qualify (Took the DOST-SEI Examination but did not qualify.)", 
+      "Did Not Avail (Qualified but did not accept the DOST-SEI scholarship.)"],
+    requirements: [
+      "Household Father's Annual Gross Income",
+      "Household Mother's Annual Gross Income",
+      "Household Spouse's Annual Gross Income (if married)",
+      "Legal Guardian's Annual Gross Income (if applicable)",
+      "Financial Contributions (If the family receives support from an outside source, specify:), Specify the name of the contributer, amount given, and purpose of contribution",
+      "If your family owns agricultural land, provide the total hectares.",
+      "Vehicle Information: Type: Ex. tricycle, passenger jeep, owner jeep, car, van | Year and Model: e.g., 2023 Toyota Revo",
+      "Form C - Certificate of Good Moral Character",
+      "Form D - Certificate of Good Health",
+      "Form E - Certificate of Program of Study and Year Level",
+      "Form F - Certificate of Residency",
+      "Form G1/G2 - Commitment to Return Service",
+      "Form H - Applicant’s Certification",
+      "Form I - Applicant/Parent Declaration",
+      "Official Transcript of Records (TOR) or True Copy of Grades (TCG) or Certified Grade Report",
+      "Applicant's recent picture",
+      "Applicant's Birth Certificate",
+      "Proof of Income",
+      "Notarized Affidavit of Guardianship",
+      "Marriage Certificate"],
+    benefits: [
+      "₱8,000 monthly stipend, up to ₱40,000 yearly tuition subsidy for private schools", 
+      "₱10,000 for learning materials",
+      "₱10,000 for transportation, graduation allowances, and insurance to ensure completion of studies."
+    ],
+    steps: [
+      "Register. Use a valid e-mail address. An email will be sent to you for verification.",
+      "Access the link provided in the email sent to you and answer the questions in the Eligibility Module. ",
+      "If you are eligible, you can proceed to the Application Module. Fill out the application form and upload all required documents.",
+      "Make sure to review your application and documents before submitting them.",
+      "Submit your application.",
+      "Only the successful applicants will be able to select their test center location preference, whether it is near your permanent address, current address, or school address."],
+  },
+  {
+    title: "PCSO Education Assistance", 
+    provider: "Government", 
+    level: "College", 
+    tags: ["College students", "Financial Aid"], 
+    link: "https://governmentph.com/pcso-educational-assistance/",
+    requirements: [
+      "Certified true copy of the Certificate of Enrollment or Registration Form for the current semester",
+      "Photocopy of any valid government-issued ID of both the student and parent/guardian",
+      "Photocopy of the student ID",
+      "A certified true copy of a Billing Statement or Statement of Account",
+      "Valid academic transcript or online report card of the previous semester",
+      "Completed PSCO Educational Assistance Application Form, along with a recent 2x2 ID photo of the student"
+    ],
+    benefits: [
+      "Financial assistance of up to ₱10,000",
+      "One-time grant to help cover educational expenses such as tuition fees"
+    ],
+    steps: [
+      "Online Submission: Prepare clear, scanned copies of all requirements.",
+      "Write a short letter in the email body explaining why you need financial assistance.",
+      "Use this email subject line: PCSO Educational Assistance [Full Name of the Applicant]",
+      "Attach all the requirements and send to verna.soriano@pcso.gov.ph",
+      "PCSO will send confirmation and feedback on your application status."
     ]
   },
   { 
