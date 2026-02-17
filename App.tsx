@@ -456,13 +456,13 @@ const App: React.FC = () => {
             <div className="space-y-8">
               <div className="text-center">
                 <h2 className="text-2xl font-black text-zinc-900 mb-6 uppercase">Watch Our Introduction Video</h2>
-                <video 
-                  controls 
-                  className="w-full border-2 border-zinc-900 shadow-[4px_4px_0_0_rgba(0,0,0,0.2)]"
-                >
-                  <source src="/ISKOLAR Video.mov" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe 
+                  src="https://drive.google.com/file/d/125dXcg5cJEDOWMumb5iBHvKZ-0yjUGlP/preview"
+                  width="100%" 
+                  height="400" 
+                  allow="autoplay"
+                  className="border-2 border-zinc-900 shadow-[4px_4px_0_0_rgba(0,0,0,0.2)]"
+                ></iframe>
                 <p className="text-zinc-600 font-medium mt-6 text-center">Learn about Iskolar and how we can help you find the right scholarship and university path.</p>
               </div>
 

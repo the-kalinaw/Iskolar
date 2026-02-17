@@ -1155,16 +1155,6 @@ export const REVIEWERS: ReviewerLink[] = [
     channel: "Julia Mendiola",
     url: "https://youtube.com/playlist?list=PLcZPX5itNV_-A7sAFPb8xxfDhJ4BcGDg_&si=LZUfXLrfXE_Crh1P",
     about: "Ang playlist na ito ay mayroong mga videos kung saan tinuturo niya kung paano sagutan ng mabilis at madali ang iba’t-ibang math problems. Tuwing UPCAT season o malapit na ang UPCAT, siya ay nagkakaroon ng libreng live review session sa tiktok."
-  },
-  {
-    channel: "VJ Villafuerte",
-    url: "https://youtu.be/6YDgA_XPR5Y?si=KrJdgFrLazwUWNMn",
-    about: "Tutorials about different topics of scholarships and university exams."
-  },
-  {
-    channel: "Julia Mendiola",
-    url: "https://youtube.com/playlist?list=PLcZPX5itNV_-A7sAFPb8xxfDhJ4BcGDg_&si=LZUfXLrfXE_Crh1P",
-    about: "A playlist of tips and tutorials focusing on math problems for preparation during UPCAT season"
   }
 ];
 
