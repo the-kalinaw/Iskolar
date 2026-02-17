@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Youtube, Download, ArrowRight, BookOpen } from 'lucide-react';
+import { Youtube, Download, ArrowRight, BookOpen, Globe } from 'lucide-react';
 import { REVIEWERS, DRIVE_LINK } from './constants';
 
 export default function ReviewersPage() {
@@ -18,6 +18,23 @@ export default function ReviewersPage() {
         {/* Decorative */}
         <div className="absolute top-1/2 left-10 -translate-y-1/2 opacity-20 pointer-events-none hidden md:block"><BookOpen size={120} /></div>
         <div className="absolute top-1/2 right-10 -translate-y-1/2 opacity-20 pointer-events-none hidden md:block"><BookOpen size={120} /></div>
+      </div>
+
+      <div className="brutal-card p-6 flex flex-col justify-between hover:bg-zinc-50 group w-full">
+        <div>
+          <h4 className="font-black text-2xl text-zinc-900 mb-2 flex items-center gap-2">
+            <Globe size={24} className="text-blue-600" /> 
+            Kolehiyo Updates
+          </h4>
+          <p className="text-zinc-600 font-medium text-sm border-l-4 border-zinc-200 pl-4">Your go-to source for college application updates, scholarship news, and tips to help you navigate your college journey.</p>
+        </div>
+        <a 
+          href="https://www.facebook.com/kolehiyoupdates" 
+          target="_blank" 
+          className="mt-6 inline-flex items-center text-sm font-black text-white bg-blue-600 px-4 py-2 border-2 border-zinc-900 shadow-[2px_2px_0_0_#18181b] hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-wide w-fit"
+        >
+          Visit Page <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+        </a>
       </div>
 
       <div>

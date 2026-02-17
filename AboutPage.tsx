@@ -21,7 +21,7 @@ export default function AboutPage() {
   // Initialize EmailJS on component mount
   useEffect(() => {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-    if (publicKey && publicKey !== 'your_emailjs_public_key') {
+    if (publicKey) {
       emailjs.init(publicKey);
     }
   }, []);
@@ -35,10 +35,7 @@ export default function AboutPage() {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     // Check if EmailJS is configured
-    if (!serviceId || !templateId || !publicKey || 
-        serviceId === 'your_emailjs_service_id' || 
-        templateId === 'your_emailjs_template_id' ||
-        publicKey === 'your_emailjs_public_key') {
+    if (!serviceId || !templateId || !publicKey) {
       setFormState('error');
       setErrorMessage('Email service is not configured. Please contact the administrator.');
       return;
@@ -205,13 +202,13 @@ export default function AboutPage() {
                  
                  <div className="text-center pt-4">
                     <p className="text-[10px] font-bold text-zinc-400 uppercase">
-                      OR EMAIL US DIRECTLY VIA YOUR APP
+                      OR EMAIL US DIRECTLY
                     </p>
                     <a 
                       href={`mailto:${recipientEmails}?subject=Iskolar Inquiry&body=${encodeURIComponent(formData.message)}`}
                       className="mt-2 inline-flex items-center gap-1 text-xs font-black text-zinc-900 hover:text-teal-600 underline"
                     >
-                      <Mail size={12} /> Open Email Client
+                      <Mail size={12} /> Open Email
                     </a>
                  </div>
                </form>

@@ -1139,12 +1139,22 @@ export const REVIEWERS: ReviewerLink[] = [
   {
     channel: "Team Lyqa",
     url: "https://www.youtube.com/watch?v=6r1rJDA924w&list=PLtQqxDEgSqMDyRaFrZAHoLpdAmJFcIZeD",
-    about: "Math, English, and Science tutorials focusing on formulas and common CET topics."
+    about: "Ang playlist na ito ay naglalaman ng tutorials tungkol sa mga topic na madalas lumalabas sa CETs. Kadalasan nakapokus sa mga subject na Math, English, at importanteng formula sa Science."
   },
   {
     channel: "Review Central",
     url: "https://www.youtube.com/@ReviewCentralAcademy/playlists",
-    about: "Playlists for specific university exams (DCAT, PLMAT, ACET, DOST, etc.)."
+    about: "Makikita sa channel na ito ang iba’t-ibang mga playlist ng mga videos na ginagamit para magreview sa iba’t-ibang scholarship/unibersidad (DCAT, PLMAT, ACET, DOST, atbp.)"
+  },
+  {
+    channel: "VJ Villafuerte",
+    url: "https://youtu.be/6YDgA_XPR5Y?si=KrJdgFrLazwUWNMn",
+    about: "Ang playlist na ito ay naglalaman ng tutorials tungkol sa mga topic sa iba’t ibang scholarship/unibersidad (UP, ACET, PUP)."
+  },
+  {
+    channel: "Julia Mendiola",
+    url: "https://youtube.com/playlist?list=PLcZPX5itNV_-A7sAFPb8xxfDhJ4BcGDg_&si=LZUfXLrfXE_Crh1P",
+    about: "Ang playlist na ito ay mayroong mga videos kung saan tinuturo niya kung paano sagutan ng mabilis at madali ang iba’t-ibang math problems. Tuwing UPCAT season o malapit na ang UPCAT, siya ay nagkakaroon ng libreng live review session sa tiktok."
   },
   {
     channel: "VJ Villafuerte",

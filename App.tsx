@@ -195,7 +195,7 @@ const App: React.FC = () => {
           </div>
           <div className="text-center md:text-right">
             <p className="text-sm font-black text-zinc-900">CARANAY • ENRIQUEZ • GONZALES • MANRIQUE</p>
-            <p className="text-xs text-zinc-500 mt-1 font-mono">Life Project 12C • Student Initiative 2024</p>
+            <p className="text-xs text-zinc-500 mt-1 font-mono">Life Project 12C • Student Initiative 2026</p>
           </div>
         </div>
       </footer>
@@ -400,7 +400,7 @@ const App: React.FC = () => {
   };
 
   const OnboardingFlow: React.FC = () => {
-    const [step, setStep] = useState(0);
+    const [step, setStep] = useState(-1); // Start with video step
     const [draft, setDraft] = useState<UserProfile>({ preferredCourses: [] });
 
     const questions = ONBOARDING_QUESTIONS;
@@ -418,13 +418,70 @@ const App: React.FC = () => {
     };
 
     const next = () => {
-      if (step === 0 && (!draft.preferredCourses || draft.preferredCourses.length === 0)) {
+      if (step === -1) {
+        // Moving from video to first question
+        setStep(0);
+      } else if (step === 0 && (!draft.preferredCourses || draft.preferredCourses.length === 0)) {
         applyAnswer('preferredCourses', ['General']); // Default to General
+        setStep(s => Math.min(s + 1, questions.length));
+      } else {
+        setStep(s => Math.min(s + 1, questions.length));
       }
-      setStep(s => Math.min(s + 1, questions.length));
     };
     
-    const prev = () => setStep(s => Math.max(s - 1, 0));
+    const prev = () => {
+      if (step === 0) {
+        setStep(-1); // Go back to video
+      } else {
+        setStep(s => Math.max(s - 1, 0));
+      }
+    };
+
+    // Video step
+    if (step === -1) {
+      return (
+        <div className="min-h-screen flex items-center justify-center p-6 bg-zinc-50 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:20px_20px] relative overflow-hidden">
+          <motion.div 
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="w-full max-w-3xl bg-white border-2 border-zinc-900 shadow-[12px_12px_0_0_#18181b] relative z-10 p-8 md:p-12"
+          >
+            <div className="flex justify-between items-start mb-8 border-b-2 border-zinc-100 pb-4">
+              <div>
+                <h1 className="text-3xl font-black text-zinc-900 tracking-tighter">Welcome to Iskolar</h1>
+                <p className="text-xs text-zinc-400 font-bold uppercase tracking-widest mt-1">Getting Started</p>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              <div className="text-center">
+                <h2 className="text-2xl font-black text-zinc-900 mb-6 uppercase">Watch Our Introduction Video</h2>
+                <video 
+                  controls 
+                  className="w-full border-2 border-zinc-900 shadow-[4px_4px_0_0_rgba(0,0,0,0.2)]"
+                >
+                  <source src="/ISKOLAR Video.mov" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <p className="text-zinc-600 font-medium mt-6 text-center">Learn about Iskolar and how we can help you find the right scholarship and university path.</p>
+              </div>
+
+              <div className="flex gap-4 justify-center pt-6 border-t-2 border-zinc-100">
+                <button 
+                  onClick={() => setStep(0)} 
+                  className="brutal-btn px-8 py-3 text-sm"
+                >
+                  Skip Video
+                </button>
+                <button onClick={next} className="brutal-btn primary px-8 py-3 text-sm">
+                  Finished Watching <ArrowRight size={16} className="ml-2" />
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      );
+    }
 
     const finish = () => {
       const normalized: UserProfile = {
