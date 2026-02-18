@@ -9,7 +9,7 @@ export default function ReviewersPage() {
       <div className="bg-teal-400 border-2 border-zinc-900 p-8 md:p-12 shadow-[8px_8px_0_0_#18181b] text-center relative overflow-hidden group">
         <div className="relative z-10">
           <h3 className="text-4xl md:text-5xl font-black text-zinc-900 uppercase mb-4 tracking-tighter">Reviewer Documents</h3>
-          <p className="text-zinc-900 font-bold text-lg mb-8 max-w-2xl mx-auto">Access our curated collection of review materials, mock exams, and study guides for free.</p>
+          <p className="text-zinc-900 font-bold text-lg mb-8 max-w-2xl mx-auto">I-access ang aming organisado na koleksyon ng review materias, mga mock exams, at mga gabay sa pag-aaral nang libre.</p>
           <a href={DRIVE_LINK} target="_blank" className="brutal-btn px-8 py-4 bg-zinc-900 text-white hover:bg-white hover:text-zinc-900 text-lg">
             <Download size={24} className="mr-3" /> Access Google Drive
           </a>
@@ -26,7 +26,7 @@ export default function ReviewersPage() {
             <Globe size={24} className="text-blue-600" /> 
             Kolehiyo Updates
           </h4>
-          <p className="text-zinc-600 font-medium text-sm border-l-4 border-zinc-200 pl-4">Your go-to source for college application updates, scholarship news, and tips to help you navigate your college journey.</p>
+          <p className="text-zinc-600 font-medium text-sm border-l-4 border-zinc-200 pl-4">Ang iyong go-to-source para sa mga updates sa aplikasyon sa kolehiyo, balita sa scholarship, at mga tip upang matulungan kang mag-navigate sa iyong paglalakbay sa kolehiyo.</p>
         </div>
         <a 
           href="https://www.facebook.com/kolehiyoupdates" 
