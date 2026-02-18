@@ -202,7 +202,7 @@ export default function AboutPage() {
                  
                  <div className="text-center pt-4">
                     <p className="text-[10px] font-bold text-zinc-400 uppercase">
-                      OR EMAIL US DIRECTLY VIA YOUR APP
+                      O DIREKTA KAMING I-EMAIL
                     </p>
                     <a 
                       href={`mailto:${recipientEmails}?subject=Iskolar Inquiry&body=${encodeURIComponent(formData.message)}`}
