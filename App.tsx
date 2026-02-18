@@ -172,11 +172,11 @@ const App: React.FC = () => {
              </h2>
              <p className="text-lg text-zinc-500 font-medium mt-4 font-mono">
                {view === 'home' && `// Custom Roadmap for Aspiring Scholars`}
-               {view === 'universities' && '// List of Accredited Institutions'}
-               {view === 'scholarships' && '// Financial Aid Opportunities'}
-               {view === 'process' && '// General Guide & Requirements'}
-               {view === 'reviewers' && '// Exam Review Materials'}
-               {view === 'about' && '// The Team Behind Iskolar'}
+               {view === 'universities' && '// Listahan ng Kinikilalang Institusyon'}
+               {view === 'scholarships' && '// Mga Programang Tulong Pinansyal'}
+               {view === 'process' && '// Pangkalahatang Gabay at mga Requirements'}
+               {view === 'reviewers' && '// Mga Materyales sa Pagrereview'}
+               {view === 'about' && '// Ang Grupo Sa Likod ng Iskolar'}
              </p>
           </div>
 
