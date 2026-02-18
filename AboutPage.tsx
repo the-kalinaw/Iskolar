@@ -37,7 +37,7 @@ export default function AboutPage() {
     // Check if EmailJS is configured
     if (!serviceId || !templateId || !publicKey) {
       setFormState('error');
-      setErrorMessage('Email service is not configured. Please contact the administrator.');
+      setErrorMessage('Hindi pa naisaayos ang serbisyo ng email. Mangyaring makipag-ugnayan sa administrator.');
       return;
     }
 
@@ -56,7 +56,7 @@ export default function AboutPage() {
       setFormData({ message: '', email: '' });
     } catch (error) {
       setFormState('error');
-      setErrorMessage('Failed to send message. Please try again or email us directly.');
+      setErrorMessage('Hindi naipadala ang mensahe. Maaaring umulit o direkta kaming i-email.');
       console.error('EmailJS error:', error);
     }
   };
@@ -172,7 +172,7 @@ export default function AboutPage() {
                  </div>
 
                  <div>
-                   <label className="block text-xs font-black uppercase text-zinc-900 mb-2">Email Address <span className="text-zinc-400 font-medium normal-case">(Optional - for us to reply)</span></label>
+                   <label className="block text-xs font-black uppercase text-zinc-900 mb-2">Email Address <span className="text-zinc-400 font-medium normal-case">(Optional - para ikaw ay mabalikan)</span></label>
                    <input 
                      type="email"
                      value={formData.email}
