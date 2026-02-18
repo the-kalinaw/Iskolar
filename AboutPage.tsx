@@ -68,9 +68,9 @@ export default function AboutPage() {
       {/* Intro Section */}
       <div className="bg-zinc-900 text-white p-8 md:p-12 border-2 border-zinc-900 shadow-[8px_8px_0_0_#2dd4bf] relative overflow-hidden">
         <div className="relative z-10">
-          <h3 className="text-4xl md:text-5xl font-black uppercase mb-4 tracking-tighter">The Team</h3>
+          <h3 className="text-4xl md:text-5xl font-black uppercase mb-4 tracking-tighter">Ang Iskolar Group</h3>
           <p className="text-lg font-bold text-zinc-400 max-w-2xl">
-            This project is a student initiative by 12C - Group 1 from Xavier School Nuvali as part of their Life Project, aiming to help make quality education accessible for everyone by collating and providing a clear application guide for scholarships.
+            Ang proyektong ito ay isang student initiative ng mga mag-aaral ng 12C - Pangkat 1 mula sa Xavier School Nuvali bilang bahagi ng kanilang Life Project, na naglalayong tumulong na gawing mas accessible ng lahat ang dekalidad na edukasyon sa pamamagitan ng pagsasama-sama at pagbibigay ng malinaw na gabay sa aplikasyon para sa mga scholarship.
           </p>
         </div>
         <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-10">
@@ -83,7 +83,7 @@ export default function AboutPage() {
         <div className="space-y-8">
            <div className="flex items-center gap-4 mb-2 border-b-2 border-zinc-200 pb-4">
               <User size={24} className="text-teal-600" />
-              <h3 className="font-black text-2xl text-zinc-900 uppercase tracking-tighter">Project Members</h3>
+              <h3 className="font-black text-2xl text-zinc-900 uppercase tracking-tighter">Mga miyembro ng proyekto</h3>
            </div>
            
            <div className="grid gap-4">
@@ -121,12 +121,12 @@ export default function AboutPage() {
         <div>
            <div className="brutal-card p-8 bg-zinc-50 border-zinc-900 h-full relative">
              <div className="absolute top-0 left-0 bg-teal-400 text-zinc-900 px-4 py-1 border-b-2 border-r-2 border-zinc-900 font-black text-xs uppercase">
-               Contact Us
+               Makipag-ugnayan
              </div>
              
-             <h3 className="font-black text-3xl text-zinc-900 uppercase tracking-tighter mt-4 mb-6">Get in Touch</h3>
+             <h3 className="font-black text-3xl text-zinc-900 uppercase tracking-tighter mt-4 mb-6">Padalhan kami ng mensahe</h3>
              <p className="text-sm font-bold text-zinc-500 mb-8">
-               Have questions or suggestions? Send us a message directly.
+                May mga tanong o mungkahi? Direktang magpadala sa amin ng mensahe.
              </p>
 
              {formState === 'success' ? (
@@ -134,13 +134,13 @@ export default function AboutPage() {
                  <div className="w-16 h-16 bg-green-500 border-2 border-green-800 rounded-full flex items-center justify-center mx-auto mb-4 text-white shadow-[4px_4px_0_0_rgba(20,83,45,1)]">
                    <CheckCircle2 size={32} />
                  </div>
-                 <h4 className="font-black text-xl text-green-800 uppercase mb-2">Message Sent!</h4>
-                 <p className="text-sm font-medium text-green-700 mb-6">Thank you for reaching out. We'll get back to you soon.</p>
+                 <h4 className="font-black text-xl text-green-800 uppercase mb-2">Naipadala na ang iyong mensahe!</h4>
+                 <p className="text-sm font-medium text-green-700 mb-6">Maraming salamat. Magbibigay kami ng update sa iyo sa lalong madaling panahon.</p>
                  <button 
                    onClick={() => setFormState('idle')} 
                    className="text-xs font-black uppercase underline hover:text-green-900"
                  >
-                   Send another message
+                   magpadala ulit ng mensahe
                  </button>
                </div>
              ) : formState === 'error' ? (
@@ -160,7 +160,7 @@ export default function AboutPage() {
              ) : (
                <form onSubmit={handleSubmit} className="space-y-6">
                  <div>
-                   <label className="block text-xs font-black uppercase text-zinc-900 mb-2">Your Message <span className="text-red-500">*</span></label>
+                   <label className="block text-xs font-black uppercase text-zinc-900 mb-2">Iyong Mensahe <span className="text-red-500">*</span></label>
                    <textarea 
                      required
                      rows={5}
@@ -190,11 +190,11 @@ export default function AboutPage() {
                     >
                       {formState === 'sending' ? (
                         <span className="flex items-center gap-2">
-                          <RefreshCw className="animate-spin" size={16} /> Sending...
+                          <RefreshCw className="animate-spin" size={16} /> Ipinapadala...
                         </span>
                       ) : (
                         <span className="flex items-center gap-2">
-                          Send Message <Send size={16} className="group-hover:translate-x-1 transition-transform" />
+                          Ipadala ang Mensahe <Send size={16} className="group-hover:translate-x-1 transition-transform" />
                         </span>
                       )}
                     </button>
@@ -202,7 +202,7 @@ export default function AboutPage() {
                  
                  <div className="text-center pt-4">
                     <p className="text-[10px] font-bold text-zinc-400 uppercase">
-                      OR EMAIL US DIRECTLY
+                      OR EMAIL US DIRECTLY VIA YOUR APP
                     </p>
                     <a 
                       href={`mailto:${recipientEmails}?subject=Iskolar Inquiry&body=${encodeURIComponent(formData.message)}`}
