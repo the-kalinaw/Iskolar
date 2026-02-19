@@ -1,5 +1,5 @@
 
-export type ViewState = 'onboarding' | 'home' | 'universities' | 'scholarships' | 'process' | 'reviewers' | 'about';
+export type ViewState = 'onboarding' | 'home' | 'universities' | 'scholarships' | 'process' | 'reviewers' | 'about' | 'dictionary';
 
 export type CourseCategory = 
   | 'General' 
@@ -15,7 +15,8 @@ export type CourseCategory =
   | 'Law';
 
 export interface UserProfile {
-  preferredCourses: CourseCategory[]; // Multiple selections
+  name?: string;
+  preferredCourses: CourseCategory[];
   location?: string;
   examReady?: boolean;
   gradesIndicator?: 'Below 80' | '80-89' | '90-94' | '95-100' | 'Prefer not to say';
@@ -36,23 +37,22 @@ export interface ScholarshipEntry {
   title: string;
   provider: 'Government' | 'Private';
   level: 'SHS/JHS' | 'College' | 'Both';
-  tags: string[]; // Short tags for cards
-  eligibility?: string[]; // Detailed eligibility criteria
+  tags: string[];
+  eligibility?: string[];
   link?: string;
   requirements?: string[];
   benefits?: string[];
   steps?: string[];
 }
 
+export interface DictionaryTerm {
+  term: string;
+  definition: string;
+  tag?: string;
+}
+
 export interface ReviewerLink {
   channel: string;
   url: string;
   about: string;
-}
-
-export interface QuizQuestion {
-  question: string;
-  options: string[];
-  correctAnswer: number;
-  explanation: string;
 }

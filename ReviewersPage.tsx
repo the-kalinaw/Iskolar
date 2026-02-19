@@ -6,7 +6,7 @@ import { REVIEWERS, DRIVE_LINK } from './constants';
 export default function ReviewersPage() {
   return (
     <div className="space-y-12">
-      <div className="bg-teal-400 border-2 border-zinc-900 p-8 md:p-12 shadow-[8px_8px_0_0_#18181b] text-center relative overflow-hidden group">
+      <div className="bg-teal-400 border-2 border-zinc-900 p-8 md:p-12 shadow-[4px_4px_0_0_#18181b] text-center relative overflow-hidden group">
         <div className="relative z-10">
           <h3 className="text-4xl md:text-5xl font-black text-zinc-900 uppercase mb-4 tracking-tighter">Reviewer Documents</h3>
           <p className="text-zinc-900 font-bold text-lg mb-8 max-w-2xl mx-auto">I-access ang aming organisado na koleksyon ng review materias, mga mock exams, at mga gabay sa pag-aaral nang libre.</p>

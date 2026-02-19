@@ -1,5 +1,5 @@
 
-import { University, ScholarshipEntry, ReviewerLink, CourseCategory } from './types';
+import { University, ScholarshipEntry, ReviewerLink, CourseCategory, DictionaryTerm } from './types';
 
 export const COURSE_CATEGORIES: CourseCategory[] = [
   'General', 
@@ -16,6 +16,14 @@ export const COURSE_CATEGORIES: CourseCategory[] = [
 ];
 
 export const ONBOARDING_QUESTIONS = [
+  {
+    id: 'name',
+    label: 'Ano ang gusto mong tawagan namin? (Alin ang iyong pangalan?)',
+    field: 'name',
+    multiple: false,
+    isText: true,
+    options: []
+  },
   {
     id: 'preferredCourses',
     label: 'Anong mga kurso o track ang interesado ka? (Maaaring pumili ng marami)',
@@ -1219,3 +1227,155 @@ export const APPLICATION_STEPS = [
   "Hintayin ang resulta ng scholarship grant.",
   "Kumpirmahin ang enrollment at magbayad ng fee (kung meron)."
 ];
+
+export const DICTIONARY_TERMS: DictionaryTerm[] = [
+  {
+    term: "Form 137",
+    definition: "Permanent Record ng estudyante na nagpapakita ng lahat ng grades at courses na ginawa. Ginagamit para sa college applications at scholarship applications."
+  },
+  {
+    term: "Form 138",
+    definition: "Report Card o Grade Card ng estudyante para sa kasalukuyang school year. Kinakailangan para sa enrollment at scholarship programs."
+  },
+  {
+    term: "GWA",
+    definition: "General Weighted Average - ang overall grade average ng estudyante. Calculated base sa lahat ng subjects taken. Mahalaga sa scholarship qualifications."
+  },
+  {
+    term: "PSA Birth Certificate",
+    definition: "Philippine Statistics Authority certified birth certificate. Official government document na kailangan para sa college enrollment at applications. Pwedeng makuha sa barangay hall o SM satellite office."
+  },
+  {
+    term: "Certificate of Good Moral Character",
+    definition: "Documento mula sa school na nagpapatunay na ang estudyante ay may magandang conduct at walang disciplinary issues."
+  },
+  {
+    term: "Entrance Exam",
+    definition: "Test na kailangan ng mga universities para ma-assess ang kakayahan ng applicants. Halimbawa: UPCAT, ACET, PUSF, ACLAT."
+  },
+  {
+    term: "Scholarship Grant",
+    definition: "Financial assistance na binibigay ng government o private organizations para sa qualified students. Covers partial o full tuition fees at allowances."
+  },
+  {
+    term: "CHED",
+    definition: "Commission on Higher Education - government agency na nag-manage ng scholarship programs at college admissions sa Pilipinas."
+  },
+  {
+    term: "DOST",
+    definition: "Department of Science and Technology - nag-aalok ng scholarship programs para sa STEM courses at may research components."
+  },
+  {
+    term: "Merit Scholarship",
+    definition: "Scholarship based sa academic excellence. Binibigyan ng priority ang students na may mataas na GWA at test scores."
+  },
+  {
+    term: "Financial Aid",
+    definition: "Tulong pera para sa education na based sa financial need ng pamilya, hindi lang sa grades."
+  },
+  {
+    term: "Tuition Fee",
+    definition: "Amount na babayaran para sa tuition/education expenses sa college. Maaaring i-cover ng scholarship grants."
+  },
+  {
+    term: "Miscellaneous Fees",
+    definition: "Additional fees para sa library, laboratory, ID, activities, at iba pang school services."
+  },
+  {
+    term: "Application Fee",
+    definition: "Non-refundable fee na babayaran kapag nag-apply sa university. Iba-iba ang amount depende sa school."
+  },
+  {
+    term: "Course Category / Track",
+    definition: "Classification ng college courses. Halimbawa: Medical, Engineering, IT, Business, Education, Arts & Design, atbp."
+  },
+  {
+    term: "SUC",
+    definition: "State Universities and Colleges - government-funded universities may lower tuition compared sa private schools."
+  },
+  {
+    term: "Public University",
+    definition: "University na government-funded lalo na sa Pilipinas. Usually may lower tuition fees kaysa private universities."
+  },
+  {
+    term: "Private University",
+    definition: "University na privately owned at operated. Usually may higher tuition fees pero may mas maraming scholarship opportunities."
+  },
+  {
+    term: "Certificate of Indigency",
+    definition: "Documento mula sa barangay na nagpapatunay na ang pamilya ay mahihirap at qualified para sa financial assistance programs."
+  },
+  {
+    term: "2x2 Photo",
+    definition: "ID photo na 2 inches by 2 inches, usually white background, formal attire. Standard requirement para sa applications."
+  },
+  {
+    term: "ITR",
+    definition: "Income Tax Return - documento na nagpapakita ng income ng pamilya. Ginagamit para ma-verify ang financial status ngayong scholarship applications."
+  },
+  {
+    term: "SHS",
+    definition: "Senior High School - grades 11-12 sa secondary education. Kinakailangan na matapos ito para mag-college."
+  },
+  {
+    term: "Grade 12 / Senior High Graduate",
+    definition: "Student na tapos na ang Grade 12 o SHS at ready na for college education."
+  },
+  {
+    term: "Scholarship Examination / Qualifying Exam",
+    definition: "Test na kailangan gawin para ma-qualify sa scholarship programs. Sumusukat ng academic ability at potential."
+  },
+  {
+    term: "UPCAT",
+    definition: "University of the Philippines College Admissions Test - entrance exam para sa University of the Philippines, isa sa most competitive universities sa Pilipinas."
+  },
+  {
+    term: "ACET",
+    definition: "Ateneo College Entrance Test - entrance exam para sa Ateneo de Manila University."
+  },
+  {
+    term: "Enrollment Period",
+    definition: "Designated time kung kailan pwedeng mag-enroll ang students sa university para sa school year."
+  },
+  {
+    term: "Semester",
+    definition: "Half ng school year, usually 6 months. Most colleges ay may 2 semesters per year (1st Sem and 2nd Sem)."
+  },
+  {
+    term: "Full Scholarship",
+    definition: "Scholarship na covering 100% ng tuition fees at other academic expenses."
+  },
+  {
+    term: "Partial Scholarship",
+    definition: "Scholarship na covering lang ng portion ng tuition fees, hindi full. Student need pa mag-pay ng remaining balance."
+  },
+  {
+    term: "OWWA",
+    definition: "Overseas Workers Welfare Administration - nag-aalok ng scholarship para sa anak ng overseas Filipino workers (OFWs)."
+  },
+  {
+    term: "OFW Dependent",
+    definition: "Child o sibling ng overseas worker. Qualified para sa special OWWA scholarship programs."
+  },
+  {
+    term: "GSIS",
+    definition: "Government Service Insurance System - offers scholarship programs para sa qualified dependents ng government employees."
+  },
+  {
+    term: "Honorable Dismissal",
+    definition: "Certificate na nagpapakita na ang estudyante ay in good standing sa previous school and pwedeng mag-transfer."
+  },
+  {
+    term: "Transcript of Records (TOR)",
+    definition: "Official document containing all academic records including grades, courses taken, and GPA. Ginagamit para sa applications at transfers."
+  },
+  {
+    term: "ALS",
+    definition: "Alternative Learning System - para sa students na hindi nakapag-attend ng regular school. May equivalent exam (A&E) para ma-validate ang learning."
+  },
+  {
+    term: "PEPT",
+    definition: "Philippine Educational Placement Test - exam para sa ALS passers para ma-determine ang equivalent grade level."
+  },
+];
+
