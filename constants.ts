@@ -18,7 +18,7 @@ export const COURSE_CATEGORIES: CourseCategory[] = [
 export const ONBOARDING_QUESTIONS = [
   {
     id: 'name',
-    label: 'Ano ang gusto mong tawagan namin? (Alin ang iyong pangalan?)',
+    label: 'Ano ang gusto mong itawag sa iyo? (Pangalan o nickname)',
     field: 'name',
     multiple: false,
     isText: true,

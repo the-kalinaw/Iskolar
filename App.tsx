@@ -535,11 +535,11 @@ const App: React.FC = () => {
                   
                   <div className="grid md:grid-cols-3 gap-6">
                     {/* Barangay */}
-                    <div className="bg-zinc-900 text-white p-6 rounded-xl border-2 border-zinc-900 shadow-[6px_6px_0_0_#2dd4bf]">
-                      <h4 className="font-black text-xl uppercase mb-4 text-teal-400 border-b border-zinc-700 pb-2">Barangay Indigency</h4>
-                      <ol className="space-y-3 text-sm font-medium text-zinc-300 list-decimal list-inside">
+                    <div className="bg-white p-6 rounded-xl border-2 border-zinc-900 shadow-[6px_6px_0_0_#18181b]">
+                      <h4 className="font-black text-xl uppercase mb-4 text-zinc-900 border-b-2 border-zinc-100 pb-2">Barangay Indigency</h4>
+                      <ol className="space-y-3 text-sm font-bold text-zinc-500 list-decimal list-inside">
                         {REQUIREMENTS_GUIDE.barangay.steps.map((step, i) => (
-                          <li key={i} className="leading-relaxed"><span className="text-zinc-100">{step}</span></li>
+                          <li key={i} className="leading-relaxed"><span className="text-zinc-700">{step}</span></li>
                         ))}
                       </ol>
                     </div>
