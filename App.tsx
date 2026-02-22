@@ -310,7 +310,7 @@ const App: React.FC = () => {
     if (step === -1) {
       return (
         <div className="min-h-screen flex items-center justify-center p-6 bg-zinc-900">
-          <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="w-full max-w-4xl bg-white border-[4px] border-zinc-900 shadow-[15px_15px_0_0_#2dd4bf] p-8 md:p-16">
+          <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="w-full max-w-7xl bg-white border-[4px] border-zinc-900 shadow-[15px_15px_0_0_#2dd4bf] p-8 md:p-16">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/2 space-y-8">
                 <IskolarLogo size={48} />
@@ -325,7 +325,7 @@ const App: React.FC = () => {
               <div className="md:w-1/2 w-full">
                 <div className="aspect-video bg-zinc-100 border-[4px] border-zinc-900 overflow-hidden shadow-[8px_8px_0_0_#18181b]">
                    <iframe 
-                    src="https://drive.google.com/file/d/125dXcg5cJEDOWMumb5iBHvKZ-0yjUGlP/preview"
+                    src="https://drive.google.com/file/d/1xc_VlCYtp1t-L8KuylP_SH9OOOeX9fHV/preview"
                     width="100%" height="100%"
                     className="w-full h-full"
                   ></iframe>
