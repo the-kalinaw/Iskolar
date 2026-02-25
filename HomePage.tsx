@@ -1,6 +1,6 @@
 
 import React, { useMemo } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ArrowRight, 
   MapPin, 
@@ -45,6 +45,11 @@ export default function HomePage({ profile, setView, setDetailItem }: { profile:
           animate={{ opacity: 1, y: 0 }}
           className="space-y-6"
         >
+          <div className="inline-block bg-yellow-100 border-2 border-zinc-900 px-4 py-1 rounded-full shadow-[4px_4px_0_0_rgba(24,24,27,0.1)]">
+            <span className="text-xs font-bold uppercase tracking-widest text-zinc-800">
+              Grade 11/12 Student Portal
+            </span>
+          </div>
           
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-zinc-900 leading-[0.9]">
             Kamusta, <span className="text-teal-500">{userName}</span>? <br />
@@ -112,11 +117,11 @@ export default function HomePage({ profile, setView, setDetailItem }: { profile:
             </div>
             <div className="mt-6 space-y-2">
               <button onClick={() => setView('reviewers')} className="w-full text-left px-4 py-3 bg-zinc-50 hover:bg-yellow-50 border-2 border-zinc-200 hover:border-yellow-500 rounded-lg text-xs font-bold uppercase transition-colors flex items-center justify-between group">
-                Reviewers <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                Free Reviewers <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
               </button>
-              <button onClick={() => setView('reviewers')} className="w-full text-left px-4 py-3 bg-zinc-50 hover:bg-yellow-50 border-2 border-zinc-200 hover:border-yellow-500 rounded-lg text-xs font-bold uppercase transition-colors flex items-center justify-between group">
-                Other Helpful Links <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-              </button>
+              <div className="px-4 py-3 bg-zinc-50 border-2 border-zinc-200 rounded-lg text-xs font-bold text-zinc-400 uppercase cursor-not-allowed">
+                Document Checklist (Soon)
+              </div>
             </div>
           </motion.div>
 
@@ -232,6 +237,86 @@ export default function HomePage({ profile, setView, setDetailItem }: { profile:
         </div>
       </section>
 
+      {/* 5. FAQ Section */}
+      <section className="px-4 md:px-0 space-y-8">
+        <div className="flex items-center gap-3 mb-8">
+          <div className="h-px bg-zinc-300 flex-1"></div>
+          <span className="text-xs font-black uppercase tracking-widest text-zinc-400">Frequently Asked Questions</span>
+          <div className="h-px bg-zinc-300 flex-1"></div>
+        </div>
+
+        <div className="grid gap-4 max-w-3xl mx-auto">
+          {FAQS.map((faq, i) => (
+            <FAQItem key={i} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+      </section>
+
     </div>
   );
 }
+
+const FAQItem = ({ question, answer }: { question: string, answer: string }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <div className="bg-white border-2 border-zinc-200 rounded-xl overflow-hidden transition-all hover:border-zinc-900">
+      <button 
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-6 py-5 text-left flex justify-between items-center gap-4 bg-white hover:bg-zinc-50 transition-colors"
+      >
+        <span className="font-bold text-zinc-800 text-lg leading-tight">{question}</span>
+        <div className={`flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
+          <ChevronRight size={20} className="text-zinc-400" />
+        </div>
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <div className="px-6 pb-6 pt-0 text-zinc-600 leading-relaxed border-t border-zinc-100 mt-2">
+              <div className="pt-4">
+                {answer}
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+const FAQS = [
+  {
+    question: "Pwede po bang mag-apply sa scholarship kapag nakapag-apply na sa iba?",
+    answer: "Maaari kang mag-apply sa maraming scholarship (halimbawa: CHED at DOST) habang naghihintay ng resulta dahil nasa application process pa lamang ito. Halimbawa, maaari kang mag-apply sa DOST at CHED; ngunit kung ikaw ay makapasa sa parehong scholarship, isa lamang ang maaari mong tanggapin. Karaniwang hindi pinapayagan ang “double scholarship” o ang pagtanggap ng dalawang tulong-pinansyal nang sabay. Kailangan mong pumili ng isa kung pareho kang matatanggap."
+  },
+  {
+    question: "Paano maging exempted sa application fee sa college?",
+    answer: "Maaaring makakuha ng exemption sa college application fee sa pamamagitan ng pagpapakita ng patunay ng pinansyal na pangangailangan (tulad ng DSWD certification, ITR, o Certificate of Indigency), pagiging kabilang sa top 10% ng graduating class, o pag-apply sa mga unibersidad na nag-aalok ng libreng entrance exam para sa mga kwalipikadong mag-aaral."
+  },
+  {
+    question: "Paano malalaman kung nakapasa?",
+    answer: "Malalaman ang resulta ng aplikasyon sa mga unibersidad at scholarship sa pamamagitan ng opisyal na email, website ng unibersidad o ahensya, o application portal. Karaniwan silang nagpapadala ng “Notice of Admission” o “Notice of Award” sa mga nakapasa, kaya siguraduhing regular na tingnan ang inbox at spam folder ng ginamit na email address. Maaari ring makipag-ugnayan sa kanilang website, Facebook page, opisyal na email, o tawagan ang unibersidad o ahensya upang makumpirma ang resulta."
+  },
+  {
+    question: "Kailangan pa po ba magpa-medical kapag nag-apply? Libre po ba ito o may bayad?",
+    answer: "May ilang paaralan na nagre-require ng medical examination. Ang iba ay nag-aalok ng libreng medical, ngunit kadalasan ay may bayad ito at ang aplikante ang sasagot ng gastos. Karaniwang nag-aanunsyo ang mga paaralan sa kanilang opisyal na Facebook page o website kung may libreng medical examination."
+  },
+  {
+    question: "Pwede pa rin po ba mag-apply sa mga scholarship at unibersidad sa hinaharap kapag hindi ako nakapag-apply noong Grade 12 (GAP Year)?",
+    answer: "Oo, maaari ka pa ring mag-apply hangga’t hindi ka pa nakakapag-enroll o nakakatanggap ng scholarship mula sa naturang unibersidad o ahensya. Depende ito sa patakaran ng bawat institusyon."
+  },
+  {
+    question: "Mayroon po bang dagdag na requirements o steps kapag nag-GAP Year?",
+    answer: "Karaniwang pareho lamang ang mga requirements para sa mga nag-GAP Year. Gayunpaman, maaaring may karagdagang dokumento o paliwanag na hinihingi ang ilang unibersidad. Kadalasan, kinakailangan din na hindi ka pa nakapag-enroll o tumanggap ng scholarship sa parehong institusyon noon."
+  },
+  {
+    question: "Paano po gumagana ang “recon” kapag hindi nakapasa?",
+    answer: "Karaniwang nag-aanunsyo ang mga unibersidad kung paano isinasagawa ang reconsideration process. Madalas, kinakailangan ang pagsulat ng email sa unibersidad na naglalaman ng iyong kahilingan, dahilan, at ilang kinakailangang dokumento, kasama ang kursong nais mong kunin. Sa ilang pagkakataon, maaari rin itong gawin onsite para sa mas mabilis na proseso. Karaniwang binibigyang-prayoridad ang mga aplikanteng lokal o nakabase pa rin sa kanilang entrance exam score."
+  }
+];
